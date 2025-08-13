@@ -260,7 +260,32 @@ libraries = {
 }
 autoplay = "fogclouds"
 
+[node name="Shader" type="Node2D" parent="."]
+z_index = -1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Shader"]
+
+[node name="TextureRect" type="TextureRect" parent="Shader/CanvasLayer"]
+visible = false
+material = ExtResource("5_21xkr")
+offset_left = -386.0
+offset_top = -4.0
+offset_right = 1534.0
+offset_bottom = 1083.0
+texture = ExtResource("5_kry3j")
+
+[node name="TextureRect2" type="TextureRect" parent="Shader/CanvasLayer"]
+z_index = -1
+material = ExtResource("12_6iyac")
+offset_left = -386.0
+offset_top = -4.0
+offset_right = 1534.0
+offset_bottom = 1083.0
+texture = ExtResource("5_kry3j")
+
 [node name="PC Frame" type="Node2D" parent="."]
+visible = false
+z_index = 1
 position = Vector2(-145, 349)
 
 [node name="Sprite2D" type="Sprite2D" parent="PC Frame"]
@@ -281,25 +306,3 @@ material = SubResource("ShaderMaterial_344ge")
 position = Vector2(-3, 1.00012)
 scale = Vector2(-1078.11, 1082.85)
 mesh = SubResource("QuadMesh_6bp64")
-
-[node name="Shader" type="Node2D" parent="."]
-visible = false
-
-[node name="CanvasLayer" type="CanvasLayer" parent="Shader"]
-
-[node name="TextureRect" type="TextureRect" parent="Shader/CanvasLayer"]
-visible = false
-material = ExtResource("5_21xkr")
-offset_left = -386.0
-offset_top = -4.0
-offset_right = 1534.0
-offset_bottom = 1083.0
-texture = ExtResource("5_kry3j")
-
-[node name="TextureRect2" type="TextureRect" parent="Shader/CanvasLayer"]
-material = ExtResource("12_6iyac")
-offset_left = -386.0
-offset_top = -4.0
-offset_right = 1534.0
-offset_bottom = 1083.0
-texture = ExtResource("5_kry3j")
