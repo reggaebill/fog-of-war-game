@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="Fog of War Game"
-run/main_scene="uid://cegxk7y5b0lgo"
+run/main_scene="uid://obxmlt70jfbb"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Player="*res://Scenes/player.tscn"
+SceneTransitions="*res://Scenes/scene_transitions.gd"
 
 [display]
 

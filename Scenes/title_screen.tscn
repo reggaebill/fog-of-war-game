@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=3 uid="uid://dsrfj4bg0r3do"]
+
+[ext_resource type="Script" uid="uid://bdvsqaq8depfa" path="res://Scenes/title_screen.gd" id="1_4gxqj"]
+[ext_resource type="Texture2D" uid="uid://2irlceq6deyu" path="res://Assets/Test/dithered pc colored copy.png" id="1_p3fck"]
+[ext_resource type="Texture2D" uid="uid://ehyknjntkc8f" path="res://Assets/Test/dithered desk.png" id="2_4gxqj"]
+
+[node name="Title Screen" type="Control"]
+y_sort_enabled = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4gxqj")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+z_index = -5
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+
+[node name="Title" type="Sprite2D" parent="CanvasLayer2"]
+
+[node name="StartButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="QuitButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PC Frame" type="Node2D" parent="."]
+y_sort_enabled = true
+position = Vector2(-145, 349)
+
+[node name="Sprite2D" type="Sprite2D" parent="PC Frame"]
+z_index = 1
+position = Vector2(687, 191)
+texture = ExtResource("1_p3fck")
+
+[node name="Sprite2D2" type="Sprite2D" parent="PC Frame"]
+position = Vector2(688, 197)
+texture = ExtResource("2_4gxqj")
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]

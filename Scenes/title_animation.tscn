@@ -1,0 +1,995 @@
+[gd_scene load_steps=244 format=3 uid="uid://obxmlt70jfbb"]
+
+[ext_resource type="Texture2D" uid="uid://nkj65plkin4a" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00000.png" id="1_skbjc"]
+[ext_resource type="Texture2D" uid="uid://cnjo2oqrmk3os" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00001.png" id="2_g0h2h"]
+[ext_resource type="Texture2D" uid="uid://dlhqasmjfd18n" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00002.png" id="3_1p00x"]
+[ext_resource type="Texture2D" uid="uid://ggkwc4ou30e2" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00003.png" id="4_38tp1"]
+[ext_resource type="Texture2D" uid="uid://c8de5uaefvrwn" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00004.png" id="5_x4ng2"]
+[ext_resource type="Texture2D" uid="uid://c4qseuin5gor4" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00005.png" id="6_qvrg4"]
+[ext_resource type="Texture2D" uid="uid://dyjcx4anoaccy" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00006.png" id="7_3usek"]
+[ext_resource type="Texture2D" uid="uid://bsrnik054yeu0" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00007.png" id="8_yx232"]
+[ext_resource type="Texture2D" uid="uid://b4wkmaf6yvwhe" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00008.png" id="9_3lpn6"]
+[ext_resource type="Texture2D" uid="uid://cn6m5truij25x" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00009.png" id="10_aswn0"]
+[ext_resource type="Texture2D" uid="uid://ccdrhpkgqq425" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00010.png" id="11_2wuyx"]
+[ext_resource type="Texture2D" uid="uid://bjgn5ge6ycjr8" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00011.png" id="12_h4kwt"]
+[ext_resource type="Texture2D" uid="uid://bsqlru3s3y32t" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00012.png" id="13_m3crr"]
+[ext_resource type="Texture2D" uid="uid://cgs1dg5hycgtf" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00013.png" id="14_xu51q"]
+[ext_resource type="Texture2D" uid="uid://bb6sdf1dp4l76" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00014.png" id="15_7jvrh"]
+[ext_resource type="Texture2D" uid="uid://bkpvg44xl7dcb" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00015.png" id="16_7tg12"]
+[ext_resource type="Texture2D" uid="uid://ddol7vo0s8nva" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00016.png" id="17_l0qhq"]
+[ext_resource type="Texture2D" uid="uid://cl6lpf20wxlfl" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00017.png" id="18_sc541"]
+[ext_resource type="Texture2D" uid="uid://v2bbf5wpf6hl" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00018.png" id="19_q104f"]
+[ext_resource type="Texture2D" uid="uid://m7yhnr7il2vx" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00019.png" id="20_oijgx"]
+[ext_resource type="Texture2D" uid="uid://cwg62t6b8pt0j" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00020.png" id="21_tg88s"]
+[ext_resource type="Texture2D" uid="uid://bvkfhmhdjujbu" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00021.png" id="22_gdum2"]
+[ext_resource type="Texture2D" uid="uid://bog43cixg8p7g" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00022.png" id="23_o4me0"]
+[ext_resource type="Texture2D" uid="uid://cdpbyt00tf6n0" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00023.png" id="24_fu8yj"]
+[ext_resource type="Texture2D" uid="uid://cowovu5n02yn4" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00024.png" id="25_dqb3e"]
+[ext_resource type="Texture2D" uid="uid://cg27vyfrbabd8" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00025.png" id="26_2lhqt"]
+[ext_resource type="Texture2D" uid="uid://bqopbxgr8cj7b" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00026.png" id="27_7meua"]
+[ext_resource type="Texture2D" uid="uid://dvukyxqdjj4va" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00027.png" id="28_pvv0k"]
+[ext_resource type="Texture2D" uid="uid://m7l2trk2tyqo" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00028.png" id="29_i16em"]
+[ext_resource type="Texture2D" uid="uid://bpsvso8640dt6" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00029.png" id="30_gfgbh"]
+[ext_resource type="Texture2D" uid="uid://cmh8c7sa82vxg" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00030.png" id="31_8hxja"]
+[ext_resource type="Texture2D" uid="uid://unlovcf2cldu" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00031.png" id="32_87pfg"]
+[ext_resource type="Texture2D" uid="uid://chbkhofvjqf4p" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00032.png" id="33_pk7q5"]
+[ext_resource type="Texture2D" uid="uid://ypl7pktdqomo" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00033.png" id="34_mbtg0"]
+[ext_resource type="Texture2D" uid="uid://xdwcs6erpnm4" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00034.png" id="35_a3xr7"]
+[ext_resource type="Texture2D" uid="uid://cppf4fwdtrwxp" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00035.png" id="36_xdnmj"]
+[ext_resource type="Texture2D" uid="uid://chai3luh27tip" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00036.png" id="37_hqepo"]
+[ext_resource type="Texture2D" uid="uid://bjmr3g513cp1n" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00037.png" id="38_742q2"]
+[ext_resource type="Texture2D" uid="uid://clkyrcvlmbmyn" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00038.png" id="39_ny2uc"]
+[ext_resource type="Texture2D" uid="uid://dxbupt5vilvr" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00039.png" id="40_wo2r2"]
+[ext_resource type="Texture2D" uid="uid://bbobyfwgc4bgy" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00040.png" id="41_3yqva"]
+[ext_resource type="Texture2D" uid="uid://f6xo2wqwmh0d" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00041.png" id="42_enas6"]
+[ext_resource type="Texture2D" uid="uid://curow4h8sypw" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00042.png" id="43_oyy6h"]
+[ext_resource type="Texture2D" uid="uid://ch57e1blm038v" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00043.png" id="44_55qtb"]
+[ext_resource type="Texture2D" uid="uid://6vysk21p1lel" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00044.png" id="45_2qa3m"]
+[ext_resource type="Texture2D" uid="uid://fsh2ulc56voh" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00045.png" id="46_c47w1"]
+[ext_resource type="Texture2D" uid="uid://c46jaqa1uiqsn" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00046.png" id="47_v4p57"]
+[ext_resource type="Texture2D" uid="uid://cw3ra4c6uiaer" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00047.png" id="48_7hh7t"]
+[ext_resource type="Texture2D" uid="uid://c121jteotefkj" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00048.png" id="49_leis3"]
+[ext_resource type="Texture2D" uid="uid://168dowcbngek" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00049.png" id="50_vmdxv"]
+[ext_resource type="Texture2D" uid="uid://byy15odo3nm05" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00050.png" id="51_0logt"]
+[ext_resource type="Texture2D" uid="uid://cr552mbjgirlw" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00051.png" id="52_6i10v"]
+[ext_resource type="Texture2D" uid="uid://dm5d5qpck07ok" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00052.png" id="53_cflaw"]
+[ext_resource type="Texture2D" uid="uid://clurbwuonnr6g" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00053.png" id="54_xncol"]
+[ext_resource type="Texture2D" uid="uid://b4dfj4musag6l" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00054.png" id="55_ge6d3"]
+[ext_resource type="Texture2D" uid="uid://dvfkwa1rw8jxt" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00055.png" id="56_x8jjs"]
+[ext_resource type="Texture2D" uid="uid://dpvxbembwf8ev" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00056.png" id="57_8jg3e"]
+[ext_resource type="Texture2D" uid="uid://d06wowcj37yvx" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00057.png" id="58_d12ib"]
+[ext_resource type="Texture2D" uid="uid://cdql0aucm1sh3" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00058.png" id="59_q7wim"]
+[ext_resource type="Texture2D" uid="uid://3knj68qigjt2" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00059.png" id="60_vu57f"]
+[ext_resource type="Texture2D" uid="uid://sxmxeoh4ugp1" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00060.png" id="61_217pi"]
+[ext_resource type="Texture2D" uid="uid://bmr88ryg5axy0" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00061.png" id="62_e3a4p"]
+[ext_resource type="Texture2D" uid="uid://bof62cw4qttap" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00062.png" id="63_o2r62"]
+[ext_resource type="Texture2D" uid="uid://co418fp4otqx4" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00063.png" id="64_045cn"]
+[ext_resource type="Texture2D" uid="uid://dtn41a6hr6sug" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00064.png" id="65_s7kom"]
+[ext_resource type="Texture2D" uid="uid://bs8sy340e6lo" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00065.png" id="66_jtil0"]
+[ext_resource type="Texture2D" uid="uid://srwlgujo3wka" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00066.png" id="67_f6yic"]
+[ext_resource type="Texture2D" uid="uid://dr1446bpfnhp0" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00067.png" id="68_xkudc"]
+[ext_resource type="Texture2D" uid="uid://cj4c5jtadckwy" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00068.png" id="69_dgjcb"]
+[ext_resource type="Texture2D" uid="uid://bm18k0upivcml" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00069.png" id="70_cj70h"]
+[ext_resource type="Texture2D" uid="uid://cce6e26ypehai" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00070.png" id="71_33s3c"]
+[ext_resource type="Texture2D" uid="uid://bxr03o0qkbwrg" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00071.png" id="72_uvn00"]
+[ext_resource type="Texture2D" uid="uid://3bnt5qis1sq3" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00072.png" id="73_tru1t"]
+[ext_resource type="Texture2D" uid="uid://cblnos7mw4gh3" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00073.png" id="74_mg41f"]
+[ext_resource type="Texture2D" uid="uid://cghbtefbimhl7" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00074.png" id="75_4qy6y"]
+[ext_resource type="Texture2D" uid="uid://68ud53fkf6lw" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00075.png" id="76_sfceh"]
+[ext_resource type="Texture2D" uid="uid://cus1vlqu75feh" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00076.png" id="77_vsqem"]
+[ext_resource type="Texture2D" uid="uid://b0pk8yhacvbhp" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00077.png" id="78_rittm"]
+[ext_resource type="Texture2D" uid="uid://colk6y75geh2s" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00078.png" id="79_m7cac"]
+[ext_resource type="Texture2D" uid="uid://dp40p0l83a5dg" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00079.png" id="80_323ua"]
+[ext_resource type="Texture2D" uid="uid://8sipnxkl4n3h" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00080.png" id="81_qil0l"]
+[ext_resource type="Texture2D" uid="uid://bnor8v8jqdhdj" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00081.png" id="82_ktfni"]
+[ext_resource type="Texture2D" uid="uid://b1l8erk3c5dvi" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00082.png" id="83_rd8wn"]
+[ext_resource type="Texture2D" uid="uid://b1k60n65a4fod" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00083.png" id="84_mmpxj"]
+[ext_resource type="Texture2D" uid="uid://bwhka2ys8grj2" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00084.png" id="85_6uhat"]
+[ext_resource type="Texture2D" uid="uid://uy3qn7xhps0w" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00085.png" id="86_lhde2"]
+[ext_resource type="Texture2D" uid="uid://ckvmoblnkhpuu" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00086.png" id="87_nqbbx"]
+[ext_resource type="Texture2D" uid="uid://dxbxef3qra2jg" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00087.png" id="88_tkaab"]
+[ext_resource type="Texture2D" uid="uid://rih674gvil84" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00088.png" id="89_f55qp"]
+[ext_resource type="Texture2D" uid="uid://h1q1pems2l7k" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00089.png" id="90_fv2d3"]
+[ext_resource type="Texture2D" uid="uid://cvo0m616nt3ow" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00090.png" id="91_qa8hb"]
+[ext_resource type="Texture2D" uid="uid://l3ghr6faxdpv" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00091.png" id="92_tq81s"]
+[ext_resource type="Texture2D" uid="uid://6mwg3c6yx11t" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00092.png" id="93_jlh7a"]
+[ext_resource type="Texture2D" uid="uid://bwuh14lmw35ol" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00093.png" id="94_ytrmw"]
+[ext_resource type="Texture2D" uid="uid://sfpjc2tkgmfm" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00094.png" id="95_02jdh"]
+[ext_resource type="Texture2D" uid="uid://wjr672780mpo" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00095.png" id="96_g540h"]
+[ext_resource type="Texture2D" uid="uid://m2bm1230iuln" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00096.png" id="97_btii7"]
+[ext_resource type="Texture2D" uid="uid://drvd8s4imcjwm" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00097.png" id="98_r6ll7"]
+[ext_resource type="Texture2D" uid="uid://dri01jb4cqu8o" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00098.png" id="99_jeeiy"]
+[ext_resource type="Texture2D" uid="uid://ctq4q257ws6ce" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00099.png" id="100_b72he"]
+[ext_resource type="Texture2D" uid="uid://bosnlgh8jupoh" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00100.png" id="101_aps1o"]
+[ext_resource type="Texture2D" uid="uid://b5cxo1o6o6l18" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00101.png" id="102_6ssbw"]
+[ext_resource type="Texture2D" uid="uid://bnos25jyly13k" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00102.png" id="103_xwdqa"]
+[ext_resource type="Texture2D" uid="uid://b5vdc6cayxoxk" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00103.png" id="104_1071a"]
+[ext_resource type="Texture2D" uid="uid://qnv6veeewgi3" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00104.png" id="105_d3aat"]
+[ext_resource type="Texture2D" uid="uid://vif3jy57dge8" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00105.png" id="106_ra1dd"]
+[ext_resource type="Texture2D" uid="uid://3v0y3fvsndco" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00106.png" id="107_l6mbh"]
+[ext_resource type="Texture2D" uid="uid://bglycae1rcmm8" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00107.png" id="108_77of0"]
+[ext_resource type="Texture2D" uid="uid://bye6lc2di7bpw" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00108.png" id="109_yrtij"]
+[ext_resource type="Texture2D" uid="uid://cs834va6a25i0" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00109.png" id="110_4142r"]
+[ext_resource type="Texture2D" uid="uid://b03ixjam1400k" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00110.png" id="111_3tto4"]
+[ext_resource type="Texture2D" uid="uid://bv1lydltif5yj" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00111.png" id="112_wm3oe"]
+[ext_resource type="Texture2D" uid="uid://cqjp7x2jkv47p" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00112.png" id="113_ysaph"]
+[ext_resource type="Texture2D" uid="uid://b3f6c8f516b20" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00113.png" id="114_mlpw0"]
+[ext_resource type="Texture2D" uid="uid://b5ebx1stqt2v3" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00114.png" id="115_8h2rh"]
+[ext_resource type="Texture2D" uid="uid://dxjwpmwlxqiwj" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00115.png" id="116_y7xuh"]
+[ext_resource type="Texture2D" uid="uid://c03tkegjamvww" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00116.png" id="117_4prki"]
+[ext_resource type="Texture2D" uid="uid://4fybuoepun1s" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00117.png" id="118_ivyq2"]
+[ext_resource type="Texture2D" uid="uid://bhc4m6811loil" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00118.png" id="119_2rxuu"]
+[ext_resource type="Texture2D" uid="uid://bi2v5un0to7n5" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00119.png" id="120_pxyer"]
+[ext_resource type="Texture2D" uid="uid://cd1v54qa2tact" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00120.png" id="121_q2j54"]
+[ext_resource type="Texture2D" uid="uid://d0gu3tkwxgbuy" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00121.png" id="122_q73o1"]
+[ext_resource type="Texture2D" uid="uid://mpvwb6e0l65b" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00122.png" id="123_14yse"]
+[ext_resource type="Texture2D" uid="uid://dtdplmfi7npo3" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00123.png" id="124_yo6is"]
+[ext_resource type="Texture2D" uid="uid://c7r10cse6prw5" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00124.png" id="125_0tdjn"]
+[ext_resource type="Texture2D" uid="uid://ygsdaqvt45yx" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00125.png" id="126_p3at8"]
+[ext_resource type="Texture2D" uid="uid://hcytdpurb4vo" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00126.png" id="127_3n71p"]
+[ext_resource type="Texture2D" uid="uid://bvqosgkfh3w2g" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00127.png" id="128_kipv6"]
+[ext_resource type="Texture2D" uid="uid://bstv6gff2mtyd" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00128.png" id="129_l0w5l"]
+[ext_resource type="Texture2D" uid="uid://ddfsfrit46gxx" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00129.png" id="130_wj7ks"]
+[ext_resource type="Texture2D" uid="uid://c5p2c84crd8po" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00130.png" id="131_5aucj"]
+[ext_resource type="Texture2D" uid="uid://dv1r53lm0ti4l" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00131.png" id="132_0d1v2"]
+[ext_resource type="Texture2D" uid="uid://bkqhhnorvp4cx" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00132.png" id="133_fewaw"]
+[ext_resource type="Texture2D" uid="uid://dwbp2sectb7l6" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00133.png" id="134_qdaqf"]
+[ext_resource type="Texture2D" uid="uid://dcr34wx3upsk2" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00134.png" id="135_xdmv6"]
+[ext_resource type="Texture2D" uid="uid://b010bspqadncj" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00135.png" id="136_5euxm"]
+[ext_resource type="Texture2D" uid="uid://dhm0sq6s7bh5r" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00136.png" id="137_miwdc"]
+[ext_resource type="Texture2D" uid="uid://bybajqpcgixwn" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00137.png" id="138_0bjfl"]
+[ext_resource type="Texture2D" uid="uid://bxe4iokaelp6h" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00138.png" id="139_hoemb"]
+[ext_resource type="Texture2D" uid="uid://bixe7m7fkfe3w" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00139.png" id="140_xbklu"]
+[ext_resource type="Texture2D" uid="uid://c4ygd5hsulis4" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00140.png" id="141_tfmav"]
+[ext_resource type="Texture2D" uid="uid://3hmof6wxvaym" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00141.png" id="142_1o0tf"]
+[ext_resource type="Texture2D" uid="uid://yrb7g1paufn1" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00142.png" id="143_kcskv"]
+[ext_resource type="Texture2D" uid="uid://46dggjjt6v8l" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00143.png" id="144_h26bt"]
+[ext_resource type="Texture2D" uid="uid://cgo30ncetvptn" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00144.png" id="145_6fv3t"]
+[ext_resource type="Texture2D" uid="uid://2dk1skar6dje" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00145.png" id="146_kncvy"]
+[ext_resource type="Texture2D" uid="uid://2lcd811jvq4g" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00146.png" id="147_tmxw4"]
+[ext_resource type="Texture2D" uid="uid://vxdmacwr7inj" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00147.png" id="148_fmjbs"]
+[ext_resource type="Texture2D" uid="uid://cr247x6757qp5" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00148.png" id="149_f0y4q"]
+[ext_resource type="Texture2D" uid="uid://dsbc47r6dbug1" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00149.png" id="150_lq741"]
+[ext_resource type="Texture2D" uid="uid://bxnia4e2y4spu" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00150.png" id="151_025pl"]
+[ext_resource type="Texture2D" uid="uid://cmnryvrdod25n" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00151.png" id="152_u2j36"]
+[ext_resource type="Texture2D" uid="uid://dhg4oatvnt0yj" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00152.png" id="153_intgw"]
+[ext_resource type="Texture2D" uid="uid://sak2nvlrp61u" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00153.png" id="154_qf2sq"]
+[ext_resource type="Texture2D" uid="uid://bwwwnrhxbacdj" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00154.png" id="155_4jg7k"]
+[ext_resource type="Texture2D" uid="uid://j4imrkqul4p7" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00155.png" id="156_m1ocm"]
+[ext_resource type="Texture2D" uid="uid://da441fnwyn8kl" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00156.png" id="157_sxgrj"]
+[ext_resource type="Texture2D" uid="uid://chp50dfttgc8d" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00157.png" id="158_ywfhj"]
+[ext_resource type="Texture2D" uid="uid://cjsgtpfpthrb7" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00158.png" id="159_6fl42"]
+[ext_resource type="Texture2D" uid="uid://dke44r31qerb7" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00159.png" id="160_1o156"]
+[ext_resource type="Texture2D" uid="uid://uqv4asor6lj5" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00160.png" id="161_h04o5"]
+[ext_resource type="Texture2D" uid="uid://budke1g26wf28" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00161.png" id="162_vhqam"]
+[ext_resource type="Texture2D" uid="uid://deu5q6v1vr48k" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00162.png" id="163_j8rwf"]
+[ext_resource type="Texture2D" uid="uid://duq6pp78bj5oh" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00163.png" id="164_2s8je"]
+[ext_resource type="Texture2D" uid="uid://cexjfdgpa866a" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00164.png" id="165_g4qts"]
+[ext_resource type="Texture2D" uid="uid://b7lrwnqu4boxi" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00165.png" id="166_yukls"]
+[ext_resource type="Texture2D" uid="uid://caj87i1j2nyo" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00166.png" id="167_pa5j0"]
+[ext_resource type="Texture2D" uid="uid://fjhpovq4qxhk" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00167.png" id="168_huy4w"]
+[ext_resource type="Texture2D" uid="uid://bnleetakrpb6p" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00168.png" id="169_chuxn"]
+[ext_resource type="Texture2D" uid="uid://bjxn0ef37355s" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00169.png" id="170_4h8yb"]
+[ext_resource type="Texture2D" uid="uid://cjsypdf1atede" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00170.png" id="171_t7mu5"]
+[ext_resource type="Texture2D" uid="uid://c0oi5phjwnpu2" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00171.png" id="172_quts7"]
+[ext_resource type="Texture2D" uid="uid://cunav14ocx7gc" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00172.png" id="173_yuk8d"]
+[ext_resource type="Texture2D" uid="uid://br70624pobihx" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00173.png" id="174_gnbj2"]
+[ext_resource type="Texture2D" uid="uid://c28l4n8xm8xxq" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00174.png" id="175_7b4aq"]
+[ext_resource type="Texture2D" uid="uid://cc2hkt8s3wkdj" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00175.png" id="176_vlr0x"]
+[ext_resource type="Texture2D" uid="uid://c403l5y2l7g2k" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00176.png" id="177_wnjyt"]
+[ext_resource type="Texture2D" uid="uid://cyd538pfgtrhk" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00177.png" id="178_ayfr2"]
+[ext_resource type="Texture2D" uid="uid://6uahtkx2pib" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00178.png" id="179_j2xnq"]
+[ext_resource type="Texture2D" uid="uid://b2fvqvn7sjbpg" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00179.png" id="180_fyr56"]
+[ext_resource type="Texture2D" uid="uid://dfg4gxgyp3ilw" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00180.png" id="181_aylya"]
+[ext_resource type="Texture2D" uid="uid://bd13jmmtrm1ae" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00181.png" id="182_qqhxj"]
+[ext_resource type="Texture2D" uid="uid://dharcnjl88j3" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00182.png" id="183_c5sls"]
+[ext_resource type="Texture2D" uid="uid://dsjkclpun703s" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00183.png" id="184_8fpae"]
+[ext_resource type="Texture2D" uid="uid://b10ssjn1xlbyb" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00184.png" id="185_7vosq"]
+[ext_resource type="Texture2D" uid="uid://joodwam7g7ou" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00185.png" id="186_l1ehk"]
+[ext_resource type="Texture2D" uid="uid://b3w8q57esiae5" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00186.png" id="187_fu21o"]
+[ext_resource type="Texture2D" uid="uid://c7jspdr828o57" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00187.png" id="188_jtij0"]
+[ext_resource type="Texture2D" uid="uid://bps5cy4il07kn" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00188.png" id="189_efrqe"]
+[ext_resource type="Texture2D" uid="uid://csriqypv6bayf" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00189.png" id="190_5hnxl"]
+[ext_resource type="Texture2D" uid="uid://esxhmg3un1hn" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00190.png" id="191_hrccs"]
+[ext_resource type="Texture2D" uid="uid://cod2imkisvpbf" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00191.png" id="192_sj0tw"]
+[ext_resource type="Texture2D" uid="uid://4pinn84iu4ni" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00192.png" id="193_ptpgu"]
+[ext_resource type="Texture2D" uid="uid://dj5f3vvnyfmk4" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00193.png" id="194_ycrgh"]
+[ext_resource type="Texture2D" uid="uid://csgskf0fbap1b" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00194.png" id="195_vcxwe"]
+[ext_resource type="Texture2D" uid="uid://bxvbevycayyb5" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00195.png" id="196_dxp4j"]
+[ext_resource type="Texture2D" uid="uid://cce2310cnohm" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00196.png" id="197_nn3hu"]
+[ext_resource type="Texture2D" uid="uid://4u2cup8ll87q" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00197.png" id="198_ksn6q"]
+[ext_resource type="Texture2D" uid="uid://c6yfm660x75op" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00198.png" id="199_j1vl4"]
+[ext_resource type="Texture2D" uid="uid://dwmj4f3walscm" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00199.png" id="200_2lqwx"]
+[ext_resource type="Texture2D" uid="uid://7s2kkpneyuvk" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00200.png" id="201_wf2du"]
+[ext_resource type="Texture2D" uid="uid://bu2owyxjmthbi" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00201.png" id="202_6fecx"]
+[ext_resource type="Texture2D" uid="uid://csm0ipcldr4n6" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00202.png" id="203_nj6f4"]
+[ext_resource type="Texture2D" uid="uid://bx06h38yeu75a" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00203.png" id="204_fp77v"]
+[ext_resource type="Texture2D" uid="uid://snmy2kr1snr6" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00204.png" id="205_rpxv4"]
+[ext_resource type="Texture2D" uid="uid://i78dj8rletl3" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00205.png" id="206_huc1h"]
+[ext_resource type="Texture2D" uid="uid://pllqix1dq04l" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00206.png" id="207_4xyr4"]
+[ext_resource type="Texture2D" uid="uid://co4x3jgqhf4hf" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00207.png" id="208_dktkx"]
+[ext_resource type="Texture2D" uid="uid://bokyobrrueeoa" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00208.png" id="209_s3hch"]
+[ext_resource type="Texture2D" uid="uid://uqc7uq3hao7p" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00209.png" id="210_7b3d5"]
+[ext_resource type="Texture2D" uid="uid://bd7d3tlwog468" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00210.png" id="211_3q2lj"]
+[ext_resource type="Texture2D" uid="uid://dn35cbcihcag8" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00211.png" id="212_rchrb"]
+[ext_resource type="Texture2D" uid="uid://di0k6arw6ry61" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00212.png" id="213_rr11d"]
+[ext_resource type="Texture2D" uid="uid://ct4avm6useq6u" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00213.png" id="214_tp1j5"]
+[ext_resource type="Texture2D" uid="uid://be4px86hcq7lr" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00214.png" id="215_v2jv3"]
+[ext_resource type="Texture2D" uid="uid://srxkbrefavhw" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00215.png" id="216_3ewb0"]
+[ext_resource type="Texture2D" uid="uid://bkjvurf3i6tl0" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00216.png" id="217_4jmpd"]
+[ext_resource type="Texture2D" uid="uid://c8ewacbnlsmvv" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00217.png" id="218_m0v05"]
+[ext_resource type="Texture2D" uid="uid://bvdbltoi3do7d" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00218.png" id="219_bfoxw"]
+[ext_resource type="Texture2D" uid="uid://deo4kmknmpofw" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00219.png" id="220_j8akd"]
+[ext_resource type="Texture2D" uid="uid://btnt5wjxame7u" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00220.png" id="221_6g5ku"]
+[ext_resource type="Texture2D" uid="uid://c26rkdxtros1q" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00221.png" id="222_ihdyc"]
+[ext_resource type="Texture2D" uid="uid://tda6vbexcmq0" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00222.png" id="223_6fcqv"]
+[ext_resource type="Texture2D" uid="uid://l48p566i4w1a" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00223.png" id="224_wvq7r"]
+[ext_resource type="Texture2D" uid="uid://bm51plpsp7y5t" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00224.png" id="225_1wctm"]
+[ext_resource type="Texture2D" uid="uid://bv1x2ygmuikpa" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00225.png" id="226_c4s2f"]
+[ext_resource type="Texture2D" uid="uid://26ppc8le7smq" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00226.png" id="227_lpg16"]
+[ext_resource type="Texture2D" uid="uid://bda46lxwva0ek" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00227.png" id="228_8onw1"]
+[ext_resource type="Texture2D" uid="uid://c86mi7dfctt6w" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00228.png" id="229_kxga0"]
+[ext_resource type="Texture2D" uid="uid://dxnmkdajfy36s" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00229.png" id="230_wsvjt"]
+[ext_resource type="Texture2D" uid="uid://dihh5v7mhyexm" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00230.png" id="231_hj53r"]
+[ext_resource type="Texture2D" uid="uid://upt17f0dn5rn" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00231.png" id="232_p1usi"]
+[ext_resource type="Texture2D" uid="uid://cugkq3fk4gork" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00232.png" id="233_abkg3"]
+[ext_resource type="Texture2D" uid="uid://dce4mymcdmcc4" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00233.png" id="234_p2ij5"]
+[ext_resource type="Texture2D" uid="uid://8i65ftsgcjp4" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00234.png" id="235_u563x"]
+[ext_resource type="Texture2D" uid="uid://ci8tifx3sxrrw" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00235.png" id="236_8bibe"]
+[ext_resource type="Texture2D" uid="uid://lngccdip3w6x" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00236.png" id="237_5gk2b"]
+[ext_resource type="Texture2D" uid="uid://bp2sei43ioglp" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00237.png" id="238_20hxq"]
+[ext_resource type="Texture2D" uid="uid://d7ceqe83eqta" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00238.png" id="239_k47to"]
+[ext_resource type="Texture2D" uid="uid://b2x5ut475i2jw" path="res://Assets/title ani/title ani/dippy eggs chrome bitmapdiffusion_00239.png" id="240_8c030"]
+[ext_resource type="Texture2D" uid="uid://2irlceq6deyu" path="res://Assets/Test/dithered pc colored copy.png" id="241_1p00x"]
+[ext_resource type="Texture2D" uid="uid://ehyknjntkc8f" path="res://Assets/Test/dithered desk.png" id="242_38tp1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dabl4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_skbjc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_g0h2h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_1p00x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_38tp1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_x4ng2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qvrg4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_3usek")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_yx232")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_3lpn6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_aswn0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_2wuyx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_h4kwt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_m3crr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_xu51q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_7jvrh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_7tg12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_l0qhq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_sc541")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_q104f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_oijgx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_tg88s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_gdum2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_o4me0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_fu8yj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_dqb3e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_2lhqt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_7meua")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_pvv0k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_i16em")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_gfgbh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_8hxja")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_87pfg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_pk7q5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_mbtg0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_a3xr7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_xdnmj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_hqepo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_742q2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_ny2uc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_wo2r2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_3yqva")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_enas6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_oyy6h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_55qtb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_2qa3m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_c47w1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_v4p57")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_7hh7t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_leis3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_vmdxv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_0logt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_6i10v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_cflaw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_xncol")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_ge6d3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_x8jjs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_8jg3e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_d12ib")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_q7wim")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_vu57f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_217pi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_e3a4p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_o2r62")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_045cn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_s7kom")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_jtil0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_f6yic")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_xkudc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_dgjcb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_cj70h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_33s3c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_uvn00")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_tru1t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_mg41f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_4qy6y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_sfceh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_vsqem")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_rittm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_m7cac")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_323ua")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_qil0l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_ktfni")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_rd8wn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_mmpxj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_6uhat")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_lhde2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_nqbbx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_tkaab")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_f55qp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_fv2d3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_qa8hb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_tq81s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_jlh7a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_ytrmw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_02jdh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_g540h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_btii7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_r6ll7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_jeeiy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_b72he")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_aps1o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_6ssbw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_xwdqa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_1071a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_d3aat")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_ra1dd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_l6mbh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_77of0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_yrtij")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_4142r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_3tto4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_wm3oe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_ysaph")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_mlpw0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_8h2rh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_y7xuh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_4prki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_ivyq2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_2rxuu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_pxyer")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_q2j54")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_q73o1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_14yse")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_yo6is")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_0tdjn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_p3at8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_3n71p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_kipv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_l0w5l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130_wj7ks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131_5aucj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132_0d1v2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133_fewaw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134_qdaqf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135_xdmv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_5euxm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137_miwdc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138_0bjfl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("139_hoemb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140_xbklu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141_tfmav")
+}, {
+"duration": 1.0,
+"texture": ExtResource("142_1o0tf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("143_kcskv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("144_h26bt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("145_6fv3t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("146_kncvy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("147_tmxw4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("148_fmjbs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("149_f0y4q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("150_lq741")
+}, {
+"duration": 1.0,
+"texture": ExtResource("151_025pl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("152_u2j36")
+}, {
+"duration": 1.0,
+"texture": ExtResource("153_intgw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("154_qf2sq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("155_4jg7k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("156_m1ocm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("157_sxgrj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("158_ywfhj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("159_6fl42")
+}, {
+"duration": 1.0,
+"texture": ExtResource("160_1o156")
+}, {
+"duration": 1.0,
+"texture": ExtResource("161_h04o5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("162_vhqam")
+}, {
+"duration": 1.0,
+"texture": ExtResource("163_j8rwf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("164_2s8je")
+}, {
+"duration": 1.0,
+"texture": ExtResource("165_g4qts")
+}, {
+"duration": 1.0,
+"texture": ExtResource("166_yukls")
+}, {
+"duration": 1.0,
+"texture": ExtResource("167_pa5j0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("168_huy4w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("169_chuxn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("170_4h8yb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("171_t7mu5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("172_quts7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("173_yuk8d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("174_gnbj2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("175_7b4aq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("176_vlr0x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("177_wnjyt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("178_ayfr2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("179_j2xnq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("180_fyr56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("181_aylya")
+}, {
+"duration": 1.0,
+"texture": ExtResource("182_qqhxj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("183_c5sls")
+}, {
+"duration": 1.0,
+"texture": ExtResource("184_8fpae")
+}, {
+"duration": 1.0,
+"texture": ExtResource("185_7vosq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("186_l1ehk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("187_fu21o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("188_jtij0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("189_efrqe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("190_5hnxl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("191_hrccs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("192_sj0tw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("193_ptpgu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("194_ycrgh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("195_vcxwe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("196_dxp4j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("197_nn3hu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("198_ksn6q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("199_j1vl4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("200_2lqwx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("201_wf2du")
+}, {
+"duration": 1.0,
+"texture": ExtResource("202_6fecx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("203_nj6f4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("204_fp77v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("205_rpxv4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("206_huc1h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("207_4xyr4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("208_dktkx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("209_s3hch")
+}, {
+"duration": 1.0,
+"texture": ExtResource("210_7b3d5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("211_3q2lj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("212_rchrb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("213_rr11d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("214_tp1j5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("215_v2jv3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("216_3ewb0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("217_4jmpd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("218_m0v05")
+}, {
+"duration": 1.0,
+"texture": ExtResource("219_bfoxw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("220_j8akd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("221_6g5ku")
+}, {
+"duration": 1.0,
+"texture": ExtResource("222_ihdyc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("223_6fcqv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("224_wvq7r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("225_1wctm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("226_c4s2f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("227_lpg16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("228_8onw1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("229_kxga0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("230_wsvjt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("231_hj53r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("232_p1usi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("233_abkg3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("234_p2ij5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("235_u563x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("236_8bibe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("237_5gk2b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("238_20hxq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("239_k47to")
+}, {
+"duration": 1.0,
+"texture": ExtResource("240_8c030")
+}],
+"loop": false,
+"name": &"title_ani",
+"speed": 24.0
+}]
+
+[node name="TitleAnimation" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(540, 400)
+scale = Vector2(0.598889, 0.598889)
+sprite_frames = SubResource("SpriteFrames_dabl4")
+animation = &"title_ani"
+autoplay = "title_ani"
+frame = 239
+frame_progress = 1.0
+
+[node name="PC Frame" type="Node2D" parent="."]
+position = Vector2(-145, 349)
+
+[node name="Sprite2D" type="Sprite2D" parent="PC Frame"]
+z_index = 1
+position = Vector2(687, 191)
+texture = ExtResource("241_1p00x")
+
+[node name="Sprite2D2" type="Sprite2D" parent="PC Frame"]
+position = Vector2(688, 197)
+texture = ExtResource("242_38tp1")

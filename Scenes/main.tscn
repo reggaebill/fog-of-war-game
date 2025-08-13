@@ -184,13 +184,11 @@ shape = SubResource("RectangleShape2D_6iyac")
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Level/StaticBody2D"]
 position = Vector2(526, 781)
 rotation = 1.57261
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_6iyac")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Level/StaticBody2D"]
 position = Vector2(524, 49.9999)
 rotation = 1.57261
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_6iyac")
 
 [node name="Player" type="Node2D" parent="."]
@@ -203,7 +201,6 @@ scale = Vector2(0.2, 0.2)
 [node name="CPUParticles2D" type="CPUParticles2D" parent="Player/Player"]
 z_index = -1
 position = Vector2(10, 110)
-scale = Vector2(1, 1)
 amount = 208
 texture = ExtResource("3_fdnlq")
 lifetime = 0.21
