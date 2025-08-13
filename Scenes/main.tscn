@@ -192,6 +192,7 @@ rotation = 1.57261
 shape = SubResource("RectangleShape2D_6iyac")
 
 [node name="Player" type="Node2D" parent="."]
+visible = false
 position = Vector2(535, 551)
 
 [node name="Player" parent="Player" groups=["Enemies"] instance=ExtResource("2_344ge")]

@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dsrfj4bg0r3do"]
+[gd_scene load_steps=5 format=3 uid="uid://dsrfj4bg0r3do"]
 
 [ext_resource type="Script" uid="uid://bdvsqaq8depfa" path="res://Scenes/title_screen.gd" id="1_4gxqj"]
 [ext_resource type="Texture2D" uid="uid://2irlceq6deyu" path="res://Assets/Test/dithered pc colored copy.png" id="1_p3fck"]
 [ext_resource type="Texture2D" uid="uid://ehyknjntkc8f" path="res://Assets/Test/dithered desk.png" id="2_4gxqj"]
+[ext_resource type="PackedScene" uid="uid://obxmlt70jfbb" path="res://Scenes/title_animation.tscn" id="2_twnyg"]
 
 [node name="Title Screen" type="Control"]
 y_sort_enabled = true
@@ -26,6 +27,18 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
+[node name="ColorRect2" type="ColorRect" parent="CanvasLayer"]
+z_index = -5
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -39.0
+offset_top = -49.0
+grow_horizontal = 2
+grow_vertical = 2
+
 [node name="CanvasLayer2" type="CanvasLayer" parent="."]
 
 [node name="Title" type="Sprite2D" parent="CanvasLayer2"]
@@ -39,6 +52,9 @@ offset_bottom = 40.0
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+
+[node name="TitleAnimation" parent="." instance=ExtResource("2_twnyg")]
+visible = false
 
 [node name="PC Frame" type="Node2D" parent="."]
 y_sort_enabled = true

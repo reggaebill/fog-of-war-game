@@ -11,8 +11,10 @@ config_version=5
 [application]
 
 config/name="Fog of War Game"
-run/main_scene="uid://obxmlt70jfbb"
+run/main_scene="uid://dsrfj4bg0r3do"
 config/features=PackedStringArray("4.4", "Forward Plus")
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/image="uid://d2tbskyqwhs6r"
 config/icon="res://icon.svg"
 
 [autoload]

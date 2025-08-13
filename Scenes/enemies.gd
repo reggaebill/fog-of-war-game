@@ -9,6 +9,7 @@ const SPAWN_INTERVAL = 1.0
 var spawn_timer: Timer
 
 func _ready() -> void:
+	print('enemies ready')
 	spawn_timer = Timer.new()
 	spawn_timer.wait_time = SPAWN_INTERVAL
 	spawn_timer.autostart = true
