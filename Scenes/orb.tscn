@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://c7qojoqoxfdy7"]
+
+[ext_resource type="Texture2D" uid="uid://btmgd0oikaph7" path="res://Assets/Bullets/orb.png" id="1_caui3"]
+[ext_resource type="Script" uid="uid://bg1djhsyo584w" path="res://Scenes/area_2d.gd" id="1_ryljl"]
+[ext_resource type="Script" uid="uid://qs28dircy3w2" path="res://Scenes/bullet_rot.gd" id="3_4tb7o"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_caui3"]
+radius = 25.0
+
+[node name="Orb" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_ryljl")
+
+[node name="bullet_rot" type="Sprite2D" parent="Area2D"]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_caui3")
+script = ExtResource("3_4tb7o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(0.4, 0.4)
+shape = SubResource("CircleShape2D_caui3")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="Area2D"]
+position = Vector2(-1.52588e-05, -1.52588e-05)
+scale = Vector2(21.2, 14.6)
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

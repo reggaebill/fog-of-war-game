@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmp1vxvh3bx2k"]
+
+[ext_resource type="Script" uid="uid://cmxdsujv1tmpu" path="res://wasp.gd" id="1_4wvjm"]
+[ext_resource type="Texture2D" uid="uid://bw1nex4i4htc2" path="res://Assets/Test/flat rock copy.png" id="2_vr6ll"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_i8uob"]
+radius = 16.6433
+
+[node name="Wasp" type="Node2D" groups=["Enemies"]]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_4wvjm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CircleShape2D_i8uob")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+scale = Vector2(0.165, 0.165)
+texture = ExtResource("2_vr6ll")
