@@ -2,6 +2,7 @@ extends Node2D
 
 
 # Called when the node enters the scene tree for the first time.
+
 const WASP_SCENE =  preload("res://Scenes/Wasp.tscn")
 const SPAWN_AREA = Vector2(1000, 1000)
 const SPAWN_INTERVAL = 1.0

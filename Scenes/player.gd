@@ -1,8 +1,13 @@
+class_name Player
 extends CharacterBody2D
 
 
+	# Player class for handling player-specific logic
+	# This class can be extended with more player-related functionality
+
 @onready var animation_player: AnimationPlayer = $Node2D/Init
 @onready var run_animation: AnimationPlayer = $Node2D/Arms
+
 var original_scale_x := 1.0
 const SPEED = 300.0
 const ACCEL = 2000.0
@@ -20,6 +25,7 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	_flip_sprite()
+	var player_pos = global_position
 	var input_vector = Vector2.ZERO
 	if Input.is_action_pressed("right"):
 		input_vector.x += 1

@@ -1,19 +1,57 @@
-[gd_scene load_steps=4 format=3 uid="uid://cmp1vxvh3bx2k"]
+[gd_scene load_steps=6 format=3 uid="uid://cmp1vxvh3bx2k"]
 
 [ext_resource type="Script" uid="uid://cmxdsujv1tmpu" path="res://wasp.gd" id="1_4wvjm"]
 [ext_resource type="Texture2D" uid="uid://bw1nex4i4htc2" path="res://Assets/Test/flat rock copy.png" id="2_vr6ll"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_i8uob"]
-radius = 16.6433
+radius = 23.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4wvjm"]
+radius = 513.024
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vr6ll"]
+radius = 55.0364
 
 [node name="Wasp" type="Node2D" groups=["Enemies"]]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+[node name="CharacterBody2D2" type="CharacterBody2D" parent="."]
+collision_layer = 24
+collision_mask = 16
 script = ExtResource("1_4wvjm")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+[node name="Hurt Box" type="CollisionShape2D" parent="CharacterBody2D2"]
+visible = false
 shape = SubResource("CircleShape2D_i8uob")
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D2"]
 scale = Vector2(0.165, 0.165)
 texture = ExtResource("2_vr6ll")
+
+[node name="Area2D" type="Area2D" parent="CharacterBody2D2"]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D2/Area2D"]
+shape = SubResource("CircleShape2D_4wvjm")
+debug_color = Color(3.51354e-06, 0.634899, 0.423628, 0.42)
+
+[node name="Avoidance" type="Area2D" parent="CharacterBody2D2"]
+collision_layer = 8
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D2/Avoidance"]
+shape = SubResource("CircleShape2D_vr6ll")
+debug_color = Color(0.847283, 0.376075, 0, 0.42)
+
+[node name="Hurtbox" type="Area2D" parent="CharacterBody2D2"]
+collision_layer = 16
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CharacterBody2D2/Hurtbox"]
+scale = Vector2(0.165, 0.165)
+polygon = PackedVector2Array(119, -210.1, 119, -208.5, 87.7, -198, 83.6, -198, 56, -185.3, 56, -184.6, 32.9, -179, 29.4, -179, -13.6, -152, -15.7, -152, -44, -131, -44, -130.2, -84.5, -107, -86.6, -107, -126.5, -79, -128.7, -79, -197.7, -21, -200, -21, -211, -6, -213.7, -6, -209, 10, -209, 12.7, -174, 60.6, -180, 69, -182.5, 69, -179, 84, -179, 87.6, -185.3, 102, -186.8, 102, -188, 114.9, -188, 137.7, -181, 146.6, -181, 148.2, -165.5, 156, -144.5, 156, -134.6, 162, -124.6, 162, -102, 153.4, -94.1, 154, -83.7, 154, -57.6, 145, -53.3, 145, -18.3, 116, -16.1, 116, 19, 74.7, 19, 74, 55.5, 52, 57.8, 52, 77.8, 33, 80, 33, 95, 11.6, 95, 9.89999, 113.7, -6, 115, -6, 132, -28.3, 132, -29, 153.7, -45, 155.9, -45, 170.9, -61, 172.1, -61, 180.1, -74, 181.4, -74, 191, -99.6, 191, -130.4, 182.3, -149, 181.7, -149, 178, -173.3, 178, -176.8, 147, -206.9, 147, -208.9)
+
+[connection signal="body_entered" from="CharacterBody2D2/Area2D" to="CharacterBody2D2" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="CharacterBody2D2/Avoidance" to="CharacterBody2D2" method="_on_avoidance_body_entered"]
+[connection signal="body_exited" from="CharacterBody2D2/Avoidance" to="CharacterBody2D2" method="_on_avoidance_body_exited"]
+[connection signal="body_entered" from="CharacterBody2D2/Hurtbox" to="CharacterBody2D2" method="_on_hurtbox_body_entered"]
