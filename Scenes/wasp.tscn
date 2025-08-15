@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://cmp1vxvh3bx2k"]
+[gd_scene load_steps=32 format=3 uid="uid://cmp1vxvh3bx2k"]
 
 [ext_resource type="Script" uid="uid://cmxdsujv1tmpu" path="res://wasp.gd" id="1_4wvjm"]
 [ext_resource type="Texture2D" uid="uid://dh8dtd5trhanm" path="res://Assets/Sprite Sheets/VFX Blood Batch 1_SpriteSheetRows.png" id="3_i8uob"]
@@ -447,6 +447,9 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4wvjm"]
 size = Vector2(2000, 2000)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_qrknv"]
+radius = 337.12
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_vr6ll"]
 radius = 55.0364
 
@@ -527,6 +530,14 @@ collision_mask = 4
 shape = SubResource("RectangleShape2D_4wvjm")
 debug_color = Color(3.51354e-06, 0.634899, 0.423628, 0.42)
 
+[node name="Attack Zoom" type="Area2D" parent="CharacterBody2D2"]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D2/Attack Zoom"]
+shape = SubResource("CircleShape2D_qrknv")
+debug_color = Color(0.939232, 0.247422, 7.70092e-07, 0.42)
+
 [node name="Avoidance" type="Area2D" parent="CharacterBody2D2"]
 collision_layer = 8
 collision_mask = 8
@@ -556,6 +567,7 @@ shape = SubResource("CapsuleShape2D_fgeto")
 
 [connection signal="animation_finished" from="CharacterBody2D2/AnimatedSprite2D" to="CharacterBody2D2" method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="body_entered" from="CharacterBody2D2/Area2D" to="CharacterBody2D2" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="CharacterBody2D2/Attack Zoom" to="CharacterBody2D2" method="_on_attack_zoom_body_entered"]
 [connection signal="body_entered" from="CharacterBody2D2/Avoidance" to="CharacterBody2D2" method="_on_avoidance_body_entered"]
 [connection signal="body_exited" from="CharacterBody2D2/Avoidance" to="CharacterBody2D2" method="_on_avoidance_body_exited"]
 [connection signal="area_entered" from="CharacterBody2D2/Hurtbox" to="CharacterBody2D2" method="_on_hurtbox_area_entered"]

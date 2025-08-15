@@ -1,14 +1,17 @@
 class_name Player
 extends CharacterBody2D
 
-@export var animation_player: AnimationPlayer
-@export var run_animation: AnimationPlayer
+@export var player = self
+@onready var line: Line2D = $Line2D
+@onready var rigidbody: RigidBody2D = $Node2D/OrbRigid
+@onready var staticbody: StaticBody2D = $Node2D/Gun/StaticBody2D
+
 
 var original_scale_x := 1.0
 const SPEED = 300.0
 const ACCEL = 2000.0
 const DECCEL = 1500.0
-const DASH_SPEED = 800.0
+const DASH_SPEED = 2000.0
 const DASH_TIME = 0.15
 var dash_timer = 0.0
 var dash_direction = Vector2.ZERO
@@ -19,6 +22,13 @@ func _ready() -> void:
 	original_scale_x = scale.x
 
 func _physics_process(delta: float) -> void:
+	#do line stuff
+	line.clear_points()
+	line.add_point(rigidbody.global_position - self.global_position)
+	line.add_point(staticbody.global_position - self.global_position)
+	pass
+
+
 	player_pos = global_position
 	var input_vector = Vector2.ZERO
 	if Input.is_action_pressed("right"):
@@ -58,10 +68,5 @@ func _flip_sprite() -> void:
 	elif (Input.is_action_just_pressed("left") and (velocity.x > 0.0)):
 		scale.x = -abs(original_scale_x)
 
-func animations() -> void:
-		if velocity.length() > 0.0:
-			animation_player.play("gun_run_ready")
-			await animation_player.animation_finished
 
-		else:
-			animation_player.play("idle")
+

@@ -1,9 +1,7 @@
-[gd_scene load_steps=16 format=3 uid="uid://cegxk7y5b0lgo"]
+[gd_scene load_steps=13 format=3 uid="uid://cegxk7y5b0lgo"]
 
 [ext_resource type="PackedScene" uid="uid://dgqha8jkomcif" path="res://Scenes/level.tscn" id="1_6bp64"]
-[ext_resource type="Script" uid="uid://cvar8bhe5qfra" path="res://Scenes/main.gd" id="1_hptm8"]
 [ext_resource type="PackedScene" uid="uid://dmbj0mm1gl5bw" path="res://Scenes/player.tscn" id="2_344ge"]
-[ext_resource type="Texture2D" uid="uid://dhb1f8o3mjfmi" path="res://Assets/BLOOM Gundam/booster.png" id="3_fdnlq"]
 [ext_resource type="Script" uid="uid://daglv00h0ykr5" path="res://Scenes/enemies.gd" id="4_fdnlq"]
 [ext_resource type="Material" uid="uid://dc3jvbt4auwn2" path="res://Shaders/materials/blue_noise/simplified_blue_noise.tres" id="5_21xkr"]
 [ext_resource type="Texture2D" uid="uid://0tjvdt5vonx" path="res://Assets/Test/Untitled-2.png" id="5_kry3j"]
@@ -14,10 +12,6 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6iyac"]
 size = Vector2(127, 1088.99)
 
-[sub_resource type="Gradient" id="Gradient_6iyac"]
-offsets = PackedFloat32Array(0, 0.786667)
-colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
-
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_344ge"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_21xkr"]
@@ -26,9 +20,9 @@ colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
 material = SubResource("ShaderMaterial_21xkr")
 
 [node name="Main" type="Node2D"]
-script = ExtResource("1_hptm8")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="Level" type="Node2D" parent="."]
 z_index = -1
@@ -60,28 +54,7 @@ shape = SubResource("RectangleShape2D_6iyac")
 [node name="Player" type="Node2D" parent="."]
 position = Vector2(535, 551)
 
-[node name="Player" parent="Player" groups=["Enemies"] instance=ExtResource("2_344ge")]
-position = Vector2(2, -31)
-scale = Vector2(0.2, 0.2)
-
-[node name="CPUParticles2D" type="CPUParticles2D" parent="Player/Player"]
-z_index = -1
-position = Vector2(10, 110)
-amount = 208
-texture = ExtResource("3_fdnlq")
-lifetime = 0.21
-preprocess = 1.02
-speed_scale = 3.0
-randomness = 0.48
-emission_shape = 1
-emission_sphere_radius = 54.31
-direction = Vector2(1, 25.955)
-spread = 0.0
-initial_velocity_min = 1000.0
-initial_velocity_max = 1000.0
-scale_amount_min = 0.0
-scale_amount_max = 0.2
-color_ramp = SubResource("Gradient_6iyac")
+[node name="Player" parent="Player" instance=ExtResource("2_344ge")]
 
 [node name="Enemies" type="Node2D" parent="." groups=["Enemies"]]
 position = Vector2(3, -5)

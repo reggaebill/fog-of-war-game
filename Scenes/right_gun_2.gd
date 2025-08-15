@@ -7,7 +7,8 @@ var muzzle_pos = Vector2.ZERO
 var orb_pos = Vector2.ZERO
 
 func _ready() -> void:
-	queue_redraw()
+	# queue_redraw()
+	pass
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
 	look_at(get_global_mouse_position())
@@ -23,11 +24,11 @@ func _process(_delta: float) -> void:
 
 	# draw_line(muzzle.global_position, orb.global_position, Color.WHITE, 10.0)
 	# update_rope()
-	queue_redraw()
+	# queue_redraw()
 
-func _draw() -> void:
-	draw_line(muzzle_pos, (muzzle_pos + orb_pos), Color.WHITE, 10.0)
-# func update_rope() -> void:
+# func _draw() -> void:
+# 	draw_line(muzzle_pos, (muzzle_pos + orb_pos), Color.WHITE, 10.0)
+# # func update_rope() -> void:
 # 	draw_line(muzzle.global_position, muzzle.global_position - orb.global_position, Color(1, 1, 1, 1), 2.0)
 # 	rope.set_as_toplevel(true)
 

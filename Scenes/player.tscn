@@ -1,16 +1,11 @@
-[gd_scene load_steps=36 format=3 uid="uid://dmbj0mm1gl5bw"]
+[gd_scene load_steps=30 format=3 uid="uid://dmbj0mm1gl5bw"]
 
 [ext_resource type="Script" uid="uid://bwrs52hk2y46y" path="res://Scenes/player.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://5hnd3nf8cnit" path="res://Assets/Player/BODY_skeleton.png" id="1_v0iea"]
-[ext_resource type="Texture2D" uid="uid://dxysqglmgqvf7" path="res://Assets/BLOOM Gundam/Left Shin.png" id="3_h4iuc"]
-[ext_resource type="Texture2D" uid="uid://c04hlft8os3t0" path="res://Assets/BLOOM Gundam/Left Thigh.png" id="4_fd4e3"]
-[ext_resource type="Texture2D" uid="uid://mg7dnvnrn42q" path="res://Assets/BLOOM Gundam/Left Foot.png" id="5_qqcod"]
+[ext_resource type="Script" uid="uid://buvtr5r77yi4e" path="res://Scenes/player_node.gd" id="3_l6n3p"]
 [ext_resource type="Texture2D" uid="uid://dqodhfsbo8qkh" path="res://Assets/BLOOM Gundam/Left Bicep.png" id="6_igrcy"]
 [ext_resource type="Texture2D" uid="uid://hjlpw7eutb4e" path="res://Assets/BLOOM Gundam/Left Shoulder.png" id="7_fs7ks"]
 [ext_resource type="Texture2D" uid="uid://bgrfej32bqiil" path="res://Assets/BLOOM Gundam/Left Sword.png" id="8_l6n3p"]
-[ext_resource type="Texture2D" uid="uid://duppk6d4ofq5j" path="res://Assets/BLOOM Gundam/Right Thigh.png" id="9_olqyp"]
-[ext_resource type="Texture2D" uid="uid://gwgmsnerb4k4" path="res://Assets/BLOOM Gundam/Right Shin.png" id="10_wpjfl"]
-[ext_resource type="Texture2D" uid="uid://cujj11gvw2l0a" path="res://Assets/BLOOM Gundam/Right Foot.png" id="11_bi64h"]
 [ext_resource type="Texture2D" uid="uid://cssv2r6lsm0i4" path="res://Assets/BLOOM Gundam/Body copy.png" id="12_2ijsl"]
 [ext_resource type="Texture2D" uid="uid://chedaubnj0d1d" path="res://Assets/BLOOM Gundam/Head.png" id="13_p1odr"]
 [ext_resource type="Texture2D" uid="uid://cvw1kntf5q6eh" path="res://Assets/BLOOM Gundam/Right Gun Right 2.png" id="14_fd4e3"]
@@ -34,9 +29,6 @@ animations = [{
 "name": &"default",
 "speed": 5.0
 }]
-
-[sub_resource type="Gradient" id="Gradient_h4iuc"]
-colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_igrcy"]
 
@@ -412,51 +404,25 @@ _data = {
 }
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vgqql"]
-radius = 119.0
+radius = 35.0571
 
-[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("animation_player", "run_animation")]
+[node name="Player" type="CharacterBody2D"]
 collision_layer = 5
 collision_mask = 5
 motion_mode = 1
 script = ExtResource("1_cvnsp")
-animation_player = NodePath("Node2D/Init")
-run_animation = NodePath("Node2D/Arms")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 visible = false
 sprite_frames = SubResource("SpriteFrames_6t5aa")
 autoplay = "default"
 
+[node name="Line2D" type="Line2D" parent="."]
+width = 5.0
+
 [node name="Node2D" type="Node2D" parent="."]
-
-[node name="CPUParticles2D" type="CPUParticles2D" parent="Node2D"]
-visible = false
-position = Vector2(15, 139)
-amount = 263
-lifetime = 0.41
-speed_scale = 6.82
-explosiveness = 0.2
-randomness = 0.48
-emission_shape = 1
-emission_sphere_radius = 77.28
-scale_amount_min = 0.0
-scale_amount_max = 51.51
-color_ramp = SubResource("Gradient_h4iuc")
-
-[node name="Left Shin2" type="Sprite2D" parent="Node2D"]
-visible = false
-position = Vector2(-164, 367)
-texture = ExtResource("3_h4iuc")
-
-[node name="Left Thigh2" type="Sprite2D" parent="Node2D"]
-visible = false
-position = Vector2(-129, 216)
-texture = ExtResource("4_fd4e3")
-
-[node name="Left Foot2" type="Sprite2D" parent="Node2D"]
-visible = false
-position = Vector2(-201, 465)
-texture = ExtResource("5_qqcod")
+scale = Vector2(0.2, 0.2)
+script = ExtResource("3_l6n3p")
 
 [node name="Left Sword2" type="Sprite2D" parent="Node2D"]
 position = Vector2(-322, 257)
@@ -470,21 +436,6 @@ texture = ExtResource("6_igrcy")
 position = Vector2(-202, -84)
 texture = ExtResource("7_fs7ks")
 
-[node name="Right Shin2" type="Sprite2D" parent="Node2D"]
-visible = false
-position = Vector2(117, 404)
-texture = ExtResource("10_wpjfl")
-
-[node name="Right Foot2" type="Sprite2D" parent="Node2D"]
-visible = false
-position = Vector2(131, 525)
-texture = ExtResource("11_bi64h")
-
-[node name="Right Thigh2" type="Sprite2D" parent="Node2D"]
-visible = false
-position = Vector2(86, 234)
-texture = ExtResource("9_olqyp")
-
 [node name="Body2" type="Sprite2D" parent="Node2D"]
 texture = ExtResource("12_2ijsl")
 
@@ -495,7 +446,7 @@ texture = ExtResource("13_p1odr")
 [node name="Gun" type="Node2D" parent="Node2D" node_paths=PackedStringArray("rope", "orb")]
 position = Vector2(182, -21)
 script = ExtResource("15_fd4e3")
-rope = NodePath("Line2D")
+rope = NodePath("../../Line2D")
 orb = NodePath("../OrbRigid")
 
 [node name="Right Gun2" type="Sprite2D" parent="Node2D/Gun"]
@@ -507,14 +458,13 @@ position = Vector2(224, -1)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Node2D/Gun"]
 position = Vector2(453, 29)
+collision_layer = 0
+collision_mask = 0
 physics_material_override = SubResource("PhysicsMaterial_igrcy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Gun/StaticBody2D"]
 position = Vector2(-5, 2)
 shape = SubResource("CircleShape2D_igrcy")
-
-[node name="Line2D" type="Line2D" parent="Node2D/Gun"]
-z_index = 3
 
 [node name="OrbRigid" type="RigidBody2D" parent="Node2D"]
 position = Vector2(632, 33)
@@ -597,7 +547,7 @@ libraries = {
 [node name="Weapon" type="Node2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-21, 20)
+position = Vector2(-1, -2)
 shape = SubResource("CircleShape2D_vgqql")
 
 [connection signal="area_entered" from="Node2D/OrbRigid/Area2D" to="Node2D/OrbRigid/Area2D" method="_on_area_entered"]

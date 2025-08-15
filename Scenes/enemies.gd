@@ -40,3 +40,5 @@ func _on_spawn_timer_timeout() -> void:
 	add_child(spawn_timer)
 	spawn_timer.connect("timeout", Callable(self, "_on_spawn_timer_timeout"))
 	spawn_interval -= 0.6 # Adjust spawn interval based on frame rate
+	if spawn_interval <= 0.1:
+		spawn_interval = 0.1

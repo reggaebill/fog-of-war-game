@@ -10,6 +10,13 @@ var _player = null
 var enemy = null
 var push_vector = Vector2.ZERO
 var health = 50
+const DASH_SPEED = 800.0
+const DASH_TIME = 4.0
+const ACCEL = 2000.0
+const DECCEL = 400.0
+var dash_timer = 0.0
+var attack_player = false
+var dash_direction = Vector2.ZERO
 
 func _ready() -> void:
 	pass
@@ -30,7 +37,25 @@ func _physics_process(delta: float) -> void:
 			var direction = to_player.normalized()
 			velocity = direction * SPEED - push_vector
 		
+			if dash_timer > 0.0:
+				dash_timer -= delta
+				velocity = dash_direction * DASH_SPEED
+				if dash_timer <= 0.0:
+					velocity = Vector2.ZERO
+
+			else:
+				var target_velocity = direction * SPEED
+				if direction.length() > 0.0:
+					velocity = velocity.move_toward(target_velocity, ACCEL * delta)
+				else:
+					velocity = velocity.move_toward(Vector2.ZERO, DECCEL * delta)
+
+				if attack_player == true:
+					dash_timer = DASH_TIME
+					dash_direction = direction
+
 			move_and_slide()
+		
 			
 	
 
@@ -55,8 +80,11 @@ func _on_avoidance_body_entered(body: CharacterBody2D) -> void:
 	if body != self:
 		enemy = body
 		# print("Applying push force to: ", enemy.name)
-		push_vector = (enemy.global_position - self.global_position).normalized() * push_force
-		enemy.velocity += push_vector
+
+
+func _on_attack_zoom_body_entered(body:Node2D) -> void:
+	if body == _player:
+		attack_player = true
 		
 func _on_avoidance_body_exited(body: CharacterBody2D) -> void:
 	# print("Avoidance body exited: ", body.name)
