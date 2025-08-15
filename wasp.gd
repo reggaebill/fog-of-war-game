@@ -1,5 +1,7 @@
 extends CharacterBody2D
-
+class_name Wasp
+@export var animatedsprite: AnimatedSprite2D
+@export var sprite: Node2D
 const SPEED = 150.0
 var speed_mult = 1.0
 @onready var player = GlobalManager.player
@@ -14,11 +16,22 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	if _player:
-		var to_player = _player.global_position - global_position
-		var direction = to_player.normalized()
-		velocity = direction * SPEED - push_vector
-		move_and_slide()
+		look_at(_player.global_position)
+		rotation_degrees = wrap(rotation_degrees, 0 ,360)
+		if rotation_degrees > 90 and rotation_degrees < 270:
+			scale.y = -1
+		else:
+			scale.y = 1
+		if animatedsprite.is_playing():
+			Vector2.ZERO
+			rotation_degrees = 0.0
+		else:
+			var to_player = _player.global_position - global_position
+			var direction = to_player.normalized()
+			velocity = direction * SPEED - push_vector
 		
+			move_and_slide()
+			
 	
 
 		# Optional: Attack if close to player
@@ -53,9 +66,12 @@ func _on_avoidance_body_exited(body: CharacterBody2D) -> void:
 		# print("Resetting push vector")
 
 
-func _on_hurtbox_body_entered() -> void:
-	print("Hurtbox body entered")
-	health -= 50
-	if health <= 0:
-		print("Wasp hit by orb")
-		queue_free()  # Destroy the wasp if health is zero or below
+func _on_hurtbox_area_entered(area: Area2D) -> void:
+	if area.name != "Hurtbox": 
+		velocity = Vector2.ZERO
+		sprite.hide()
+		animatedsprite.play("Splat")
+
+
+func _on_animated_sprite_2d_animation_finished() -> void:
+	queue_free()

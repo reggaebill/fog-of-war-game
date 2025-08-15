@@ -1,7 +1,7 @@
 extends Area2D
 
-
-var speed = 400
+@export var animation_player: AnimationPlayer
+var speed = 600.0
 # Called when the node enters the scene tree for the first time.
 var velocity = Vector2.ZERO
 
@@ -21,4 +21,15 @@ func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
 
 
 func _on_body_entered(body: Node2D) -> void:
+	animation_player.play("explode")
+
+	
+
+func _on_area_entered(area:Area2D) -> void:
+	animation_player.play("explode")
+	
+
+
+
+func _on_animation_player_animation_finished(anim_name:StringName) -> void:
 	queue_free()

@@ -1,18 +1,84 @@
-[gd_scene load_steps=5 format=3 uid="uid://c7qojoqoxfdy7"]
+[gd_scene load_steps=9 format=3 uid="uid://c7qojoqoxfdy7"]
 
 [ext_resource type="Texture2D" uid="uid://btmgd0oikaph7" path="res://Assets/Bullets/orb.png" id="1_caui3"]
 [ext_resource type="Script" uid="uid://bg1djhsyo584w" path="res://Scenes/area_2d.gd" id="1_ryljl"]
 [ext_resource type="Script" uid="uid://qs28dircy3w2" path="res://Scenes/bullet_rot.gd" id="3_4tb7o"]
 
+[sub_resource type="Gradient" id="Gradient_4tb7o"]
+offsets = PackedFloat32Array(0.686667, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_caui3"]
 radius = 25.0
 
+[sub_resource type="Animation" id="Animation_r3x0a"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CPUParticles2D:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_4tb7o"]
+resource_name = "explode"
+length = 0.37
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CPUParticles2D:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gn4ky"]
+_data = {
+&"RESET": SubResource("Animation_r3x0a"),
+&"explode": SubResource("Animation_4tb7o")
+}
+
 [node name="Orb" type="Node2D"]
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="." node_paths=PackedStringArray("animation_player")]
 collision_layer = 18
 collision_mask = 18
 script = ExtResource("1_ryljl")
+animation_player = NodePath("AnimationPlayer")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="Area2D"]
+emitting = false
+lifetime = 0.37
+one_shot = true
+speed_scale = 2.29
+explosiveness = 0.6
+randomness = 0.26
+emission_shape = 1
+emission_sphere_radius = 2.04
+gravity = Vector2(0, 0)
+initial_velocity_min = 518.69
+initial_velocity_max = 727.27
+angular_velocity_min = 90.0
+angular_velocity_max = 90.0
+linear_accel_min = 100.0
+linear_accel_max = 100.0
+tangential_accel_min = 100.0
+tangential_accel_max = 100.0
+angle_min = 90.0
+angle_max = 293.6
+scale_amount_min = 2.0
+scale_amount_max = 11.1
+color_ramp = SubResource("Gradient_4tb7o")
 
 [node name="bullet_rot" type="Sprite2D" parent="Area2D"]
 scale = Vector2(0.4, 0.4)
@@ -27,4 +93,11 @@ shape = SubResource("CircleShape2D_caui3")
 position = Vector2(-1.52588e-05, -1.52588e-05)
 scale = Vector2(21.2, 14.6)
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Area2D"]
+libraries = {
+&"": SubResource("AnimationLibrary_gn4ky")
+}
+
+[connection signal="area_entered" from="Area2D" to="Area2D" method="_on_area_entered"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="animation_finished" from="Area2D/AnimationPlayer" to="Area2D" method="_on_animation_player_animation_finished"]
