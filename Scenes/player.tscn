@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://dmbj0mm1gl5bw"]
+[gd_scene load_steps=36 format=3 uid="uid://dmbj0mm1gl5bw"]
 
 [ext_resource type="Script" uid="uid://bwrs52hk2y46y" path="res://Scenes/player.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://5hnd3nf8cnit" path="res://Assets/Player/BODY_skeleton.png" id="1_v0iea"]
@@ -16,6 +16,9 @@
 [ext_resource type="Texture2D" uid="uid://cvw1kntf5q6eh" path="res://Assets/BLOOM Gundam/Right Gun Right 2.png" id="14_fd4e3"]
 [ext_resource type="Script" uid="uid://0bwwn84rm0eg" path="res://Scenes/right_gun_2.gd" id="15_fd4e3"]
 [ext_resource type="Texture2D" uid="uid://brq8womi4t32e" path="res://Assets/BLOOM Gundam/Right Shoulder.png" id="15_vfarp"]
+[ext_resource type="Texture2D" uid="uid://y4juy72t2ivs" path="res://Assets/Bullets/Untitled_Artwork(1).png" id="16_qqcod"]
+[ext_resource type="Texture2D" uid="uid://btmgd0oikaph7" path="res://Assets/Bullets/orb.png" id="17_igrcy"]
+[ext_resource type="Script" uid="uid://vm5wd2imyhlx" path="res://Scenes/flail.gd" id="18_fs7ks"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cvnsp"]
 atlas = ExtResource("1_v0iea")
@@ -34,6 +37,23 @@ animations = [{
 
 [sub_resource type="Gradient" id="Gradient_h4iuc"]
 colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_igrcy"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_igrcy"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_fs7ks"]
+bounce = 0.24
+
+[sub_resource type="Gradient" id="Gradient_igrcy"]
+offsets = PackedFloat32Array(0, 0.586667)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fs7ks"]
+radius = 39.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_l6n3p"]
+radius = 25.0
 
 [sub_resource type="Animation" id="Animation_83xs0"]
 length = 0.001
@@ -381,160 +401,26 @@ tracks/5/keys = {
 "times": PackedFloat32Array(0)
 }
 
-[sub_resource type="Animation" id="Animation_qqcod"]
-resource_name = "gun_run"
-length = 1.2
-loop_mode = 1
-tracks/0/type = "bezier"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../Left Sword2:position:x")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0),
-"points": PackedFloat32Array(-424, -0.25, 0, 0.25, 0, -455, -0.25, 0, 0.25, 0, -428, -0.25, 0, 0.25, 0, -468, -0.25, 0, 0.25, 0, -427, -0.25, 0, 0.25, 0, -453, -0.25, 0, 0.25, 0, -424, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0.0666667, 0.26, 0.45, 0.67, 0.89, 1.06, 1.2)
-}
-tracks/1/type = "bezier"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../Left Sword2:position:y")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0),
-"points": PackedFloat32Array(148, -0.25, 0, 0.25, 0, 147, -0.25, 0, 0.25, 0, 147, -0.25, 0, 0.25, 0, 149, -0.25, 0, 0.25, 0, 149, -0.25, 0, 0.25, 0, 154, -0.25, 0, 0.25, 0, 148, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0.0666667, 0.26, 0.45, 0.67, 0.89, 1.06, 1.2)
-}
-tracks/2/type = "bezier"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("../Left Sword2:rotation")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(0.652753, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0.0666667)
-}
-tracks/3/type = "bezier"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("../Left Bicep2:position:x")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(-219, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0.0666667)
-}
-tracks/4/type = "bezier"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("../Left Bicep2:position:y")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0.0666667)
-}
-tracks/5/type = "bezier"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("../Left Bicep2:rotation")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0),
-"points": PackedFloat32Array(-0.0628319, -0.25, 0, 0.25, 0, 0.263545, -0.25, 0, 0.25, 0, -0.0628319, -0.25, 0, 0.25, 0, 0.263545, -0.25, 0, 0.25, 0, 0.106465, -0.25, 0, 0.25, 0, 0.270526, -0.25, 0, 0.25, 0, 0.122173, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0.0666667, 0.27, 0.46, 0.66, 0.89, 1.05, 1.2)
-}
-
-[sub_resource type="Animation" id="Animation_fd4e3"]
-resource_name = "Gun Run"
-length = 1.2
-tracks/0/type = "bezier"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../Left Sword2:position:x")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0, 0),
-"points": PackedFloat32Array(-322, -0.25, 0, 0.25, 0, -424, -0.25, 0, 0.25, 0, -465, -0.25, 0, 0.25, 0, -424, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0, 0.5, 0.76, 1.2)
-}
-tracks/1/type = "bezier"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../Left Sword2:position:y")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0, 0),
-"points": PackedFloat32Array(257, -0.25, 0, 0.25, 0, 149, -0.25, 0, 0.25, 0, 150, -0.25, 0, 0.25, 0, 148, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0, 0.5, 0.76, 1.2)
-}
-tracks/2/type = "bezier"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("../Left Sword2:rotation")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0.652753, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0, 0.5)
-}
-tracks/3/type = "bezier"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("../Left Bicep2:position:x")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0),
-"points": PackedFloat32Array(-212, -0.25, 0, 0.25, 0, -228, -0.25, 0, 0.25, 0, -219, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0, 0.71, 1.2)
-}
-tracks/4/type = "bezier"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("../Left Bicep2:position:y")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0),
-"points": PackedFloat32Array(-5, -0.25, 0, 0.25, 0, -8.58307e-06, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0, 0.71, 1.2)
-}
-tracks/5/type = "bezier"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("../Left Bicep2:rotation")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0, 0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, -0.10472, -0.25, 0, 0.25, 0, 0.47822, -0.25, 0, 0.25, 0, -0.0628319, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0, 0.46, 0.71, 1.2)
-}
+[sub_resource type="Animation" id="Animation_fs7ks"]
+resource_name = "fire"
+length = 0.2
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_igrcy"]
 _data = {
 &"RESET": SubResource("Animation_h4iuc"),
-&"gun_run": SubResource("Animation_qqcod"),
-&"gun_run_ready": SubResource("Animation_fd4e3")
+&"fire": SubResource("Animation_fs7ks")
 }
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vgqql"]
 radius = 119.0
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("animation_player", "run_animation")]
+collision_layer = 5
+collision_mask = 5
 motion_mode = 1
 script = ExtResource("1_cvnsp")
+animation_player = NodePath("Node2D/Init")
+run_animation = NodePath("Node2D/Arms")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 visible = false
@@ -606,9 +492,11 @@ texture = ExtResource("12_2ijsl")
 position = Vector2(-39, -110)
 texture = ExtResource("13_p1odr")
 
-[node name="Gun" type="Node2D" parent="Node2D"]
+[node name="Gun" type="Node2D" parent="Node2D" node_paths=PackedStringArray("rope", "orb")]
 position = Vector2(182, -21)
 script = ExtResource("15_fd4e3")
+rope = NodePath("Line2D")
+orb = NodePath("../OrbRigid")
 
 [node name="Right Gun2" type="Sprite2D" parent="Node2D/Gun"]
 position = Vector2(227, 31)
@@ -617,10 +505,74 @@ texture = ExtResource("14_fd4e3")
 [node name="Muzzle" type="Marker2D" parent="Node2D/Gun/Right Gun2"]
 position = Vector2(224, -1)
 
-[node name="Shoot_timer" type="Timer" parent="Node2D/Gun"]
-wait_time = 0.75
-one_shot = true
-autostart = true
+[node name="StaticBody2D" type="StaticBody2D" parent="Node2D/Gun"]
+position = Vector2(453, 29)
+physics_material_override = SubResource("PhysicsMaterial_igrcy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Gun/StaticBody2D"]
+position = Vector2(-5, 2)
+shape = SubResource("CircleShape2D_igrcy")
+
+[node name="Line2D" type="Line2D" parent="Node2D/Gun"]
+z_index = 3
+
+[node name="OrbRigid" type="RigidBody2D" parent="Node2D"]
+position = Vector2(632, 33)
+collision_layer = 16
+collision_mask = 0
+mass = 0.2
+physics_material_override = SubResource("PhysicsMaterial_fs7ks")
+linear_damp = 1.0
+
+[node name="Orb" type="Sprite2D" parent="Node2D/OrbRigid"]
+position = Vector2(0, -1)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("17_igrcy")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="Node2D/OrbRigid/Orb"]
+z_index = -1
+position = Vector2(1, 0)
+amount = 100
+texture = ExtResource("16_qqcod")
+lifetime = 0.47
+explosiveness = 0.12
+randomness = 0.22
+emission_shape = 1
+emission_sphere_radius = 37.2
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 10.1
+initial_velocity_max = 131.31
+linear_accel_min = 56.57
+linear_accel_max = 72.73
+radial_accel_min = 19.19
+radial_accel_max = 101.85
+tangential_accel_max = 47.47
+angle_min = -180.0
+angle_max = 180.0
+scale_amount_min = 0.1
+scale_amount_max = 0.6
+color_ramp = SubResource("Gradient_igrcy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/OrbRigid"]
+shape = SubResource("CircleShape2D_fs7ks")
+
+[node name="Area2D" type="Area2D" parent="Node2D/OrbRigid"]
+collision_layer = 18
+collision_mask = 18
+script = ExtResource("18_fs7ks")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/OrbRigid/Area2D"]
+scale = Vector2(0.4, 0.4)
+shape = SubResource("CircleShape2D_l6n3p")
+
+[node name="DampedSpringJoint2D" type="DampedSpringJoint2D" parent="Node2D"]
+position = Vector2(634, 9)
+node_a = NodePath("../Gun/StaticBody2D")
+node_b = NodePath("../OrbRigid")
+length = 2.0
+stiffness = 10.0
+damping = 0.01
 
 [node name="Right Shoulder2" type="Sprite2D" parent="Node2D"]
 position = Vector2(217, -73)
@@ -648,4 +600,5 @@ libraries = {
 position = Vector2(-21, 20)
 shape = SubResource("CircleShape2D_vgqql")
 
-[connection signal="timeout" from="Node2D/Gun/Shoot_timer" to="Node2D/Gun" method="_on_shoot_timer_timeout"]
+[connection signal="area_entered" from="Node2D/OrbRigid/Area2D" to="Node2D/OrbRigid/Area2D" method="_on_area_entered"]
+[connection signal="body_entered" from="Node2D/OrbRigid/Area2D" to="Node2D/OrbRigid/Area2D" method="_on_body_entered"]

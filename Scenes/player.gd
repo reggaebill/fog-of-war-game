@@ -1,25 +1,25 @@
+class_name Player
 extends CharacterBody2D
 
+@export var animation_player: AnimationPlayer
+@export var run_animation: AnimationPlayer
 
-@onready var animation_player: AnimationPlayer = $Node2D/Init
-@onready var run_animation: AnimationPlayer = $Node2D/Arms
 var original_scale_x := 1.0
 const SPEED = 300.0
 const ACCEL = 2000.0
 const DECCEL = 1500.0
 const DASH_SPEED = 800.0
 const DASH_TIME = 0.15
-const BULLET = preload("orb.tscn")
 var dash_timer = 0.0
 var dash_direction = Vector2.ZERO
-
+var player_pos = null
 
 
 func _ready() -> void:
 	original_scale_x = scale.x
 
 func _physics_process(delta: float) -> void:
-	_flip_sprite()
+	player_pos = global_position
 	var input_vector = Vector2.ZERO
 	if Input.is_action_pressed("right"):
 		input_vector.x += 1
@@ -62,6 +62,6 @@ func animations() -> void:
 		if velocity.length() > 0.0:
 			animation_player.play("gun_run_ready")
 			await animation_player.animation_finished
-			run_animation.play("gun_run")
+
 		else:
 			animation_player.play("idle")

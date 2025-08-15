@@ -1,19 +1,561 @@
-[gd_scene load_steps=4 format=3 uid="uid://cmp1vxvh3bx2k"]
+[gd_scene load_steps=31 format=3 uid="uid://cmp1vxvh3bx2k"]
 
 [ext_resource type="Script" uid="uid://cmxdsujv1tmpu" path="res://wasp.gd" id="1_4wvjm"]
-[ext_resource type="Texture2D" uid="uid://bw1nex4i4htc2" path="res://Assets/Test/flat rock copy.png" id="2_vr6ll"]
+[ext_resource type="Texture2D" uid="uid://dh8dtd5trhanm" path="res://Assets/Sprite Sheets/VFX Blood Batch 1_SpriteSheetRows.png" id="3_i8uob"]
+[ext_resource type="Texture2D" uid="uid://ht3cwc1ss88m" path="res://Assets/wasp layers/Layer 4.png" id="3_qrknv"]
+[ext_resource type="Texture2D" uid="uid://bk6xiqvwbo8m1" path="res://Assets/wasp layers/Layer 3.png" id="4_nosfs"]
+[ext_resource type="Texture2D" uid="uid://kffnof1yfvjq" path="res://Assets/wasp layers/Layer 2.png" id="5_0pxd4"]
+[ext_resource type="Texture2D" uid="uid://h43fgqmcq0jh" path="res://Assets/wasp layers/Layer 7.png" id="6_fgeto"]
+[ext_resource type="Texture2D" uid="uid://x7cnyjxpp5un" path="res://Assets/wasp layers/Layer 6.png" id="7_rat0l"]
+[ext_resource type="Texture2D" uid="uid://knw4rk4xutro" path="res://Assets/wasp layers/Layer 5.png" id="8_n0gmw"]
+[ext_resource type="Texture2D" uid="uid://b6nepmvn72bi0" path="res://Assets/wasp layers/Layer 9.png" id="9_vjd4n"]
+[ext_resource type="Texture2D" uid="uid://dcqme2dqgiyca" path="res://Assets/wasp layers/Layer 8.png" id="10_8wggg"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_i8uob"]
-radius = 16.6433
+[sub_resource type="AtlasTexture" id="AtlasTexture_bntxp"]
+atlas = ExtResource("3_i8uob")
+region = Rect2(0, 0, 110, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n8uva"]
+atlas = ExtResource("3_i8uob")
+region = Rect2(110, 0, 110, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_auvi2"]
+atlas = ExtResource("3_i8uob")
+region = Rect2(220, 0, 110, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mn4r7"]
+atlas = ExtResource("3_i8uob")
+region = Rect2(330, 0, 110, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cyle7"]
+atlas = ExtResource("3_i8uob")
+region = Rect2(440, 0, 110, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qrknv"]
+atlas = ExtResource("3_i8uob")
+region = Rect2(550, 0, 110, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nosfs"]
+atlas = ExtResource("3_i8uob")
+region = Rect2(660, 0, 110, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0pxd4"]
+atlas = ExtResource("3_i8uob")
+region = Rect2(770, 0, 110, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fgeto"]
+atlas = ExtResource("3_i8uob")
+region = Rect2(880, 0, 110, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rat0l"]
+atlas = ExtResource("3_i8uob")
+region = Rect2(990, 0, 110, 93)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n0gmw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bntxp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n8uva")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_auvi2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mn4r7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cyle7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qrknv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nosfs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0pxd4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fgeto")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rat0l")
+}],
+"loop": false,
+"name": &"Splat",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qrknv"]
+radius = 12.2953
+height = 67.1803
+
+[sub_resource type="Animation" id="Animation_nosfs"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Butt:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Butt:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Head:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Head:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Legs 1:position:x")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Legs 1:position:y")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Legs 1:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Legs 2:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/8/type = "bezier"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Legs 3:rotation")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/9/type = "bezier"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Legs 2:position:x")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/10/type = "bezier"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Legs 2:position:y")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/11/type = "bezier"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Legs 3:position:x")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/12/type = "bezier"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Legs 3:position:y")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/13/type = "bezier"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Bottom Wing:rotation")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/14/type = "bezier"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Top Wing:rotation")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_qrknv"]
+resource_name = "default"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Butt:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.51),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(27.2727, -22.7273)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Butt:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.51),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -0.490438]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Head:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.49),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.0872665]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Head:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.49),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-9.09091, -13.6364)]
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Legs 1:position:x")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, -9.09091, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.3, 0.8)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Legs 1:position:y")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, -13.6364, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.3, 0.8)
+}
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Legs 1:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0.15708, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.28, 0.8)
+}
+tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Legs 2:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0.15708, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.38, 0.92)
+}
+tracks/8/type = "bezier"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Legs 3:rotation")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0.15708, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.49, 0.86)
+}
+tracks/9/type = "bezier"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Legs 2:position:x")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, -9.09091, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.38, 0.92)
+}
+tracks/10/type = "bezier"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Legs 2:position:y")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, -4.54545, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.38, 0.92)
+}
+tracks/11/type = "bezier"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Legs 3:position:x")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, -13.6364, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.49, 0.88)
+}
+tracks/12/type = "bezier"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Legs 3:position:y")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, -1.78814e-07, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.49, 0.88)
+}
+tracks/13/type = "bezier"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Bottom Wing:rotation")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, -0.164061, -0.25, 0, 0.25, 0, 0.326377, -0.25, 0, 0.25, 0, -0.164061, -0.25, 0, 0.25, 0, 0.15708, -0.25, 0, 0.25, 0, -0.15708, -0.25, 0, 0.25, 0, 0.15708, -0.25, 0, 0.25, 0, -0.15708, -0.25, 0, 0.25, 0, 0.15708, -0.25, 0, 0.25, 0, -0.15708, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.09, 0.19, 0.28, 0.39, 0.5, 0.6, 0.72, 0.81, 0.9, 1)
+}
+tracks/14/type = "bezier"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Top Wing:rotation")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, -0.15708, -0.25, 0, 0.25, 0, 0.15708, -0.25, 0, 0.25, 0, 0.20944, -0.25, 0, 0.25, 0, -0.15708, -0.25, 0, 0.25, 0, 0.174533, -0.25, 0, 0.25, 0, -0.191986, -0.25, 0, 0.25, 0, 0.15708, -0.25, 0, 0.25, 0, -0.174533, -0.25, 0, 0.25, 0, 0.174533, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.07, 0.19, 0.31, 0.32, 0.4, 0.5, 0.6, 0.71, 0.87, 1)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0pxd4"]
+_data = {
+&"RESET": SubResource("Animation_nosfs"),
+&"default": SubResource("Animation_qrknv")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4wvjm"]
+size = Vector2(2000, 2000)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vr6ll"]
+radius = 55.0364
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nosfs"]
+radius = 3.0
+height = 16.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0pxd4"]
+radius = 7.06618
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fgeto"]
+height = 51.6675
 
 [node name="Wasp" type="Node2D" groups=["Enemies"]]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+[node name="CharacterBody2D2" type="CharacterBody2D" parent="." node_paths=PackedStringArray("animatedsprite", "sprite")]
+collision_layer = 8
+collision_mask = 8
 script = ExtResource("1_4wvjm")
+animatedsprite = NodePath("AnimatedSprite2D")
+sprite = NodePath("Node2D")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-shape = SubResource("CircleShape2D_i8uob")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D2"]
+position = Vector2(-1, -38)
+scale = Vector2(1.695, 1.695)
+sprite_frames = SubResource("SpriteFrames_n0gmw")
+animation = &"Splat"
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
-scale = Vector2(0.165, 0.165)
-texture = ExtResource("2_vr6ll")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D2"]
+position = Vector2(-4, -9)
+rotation = 0.958186
+shape = SubResource("CapsuleShape2D_qrknv")
+
+[node name="Node2D" type="Node2D" parent="CharacterBody2D2"]
+scale = Vector2(0.22, 0.22)
+
+[node name="Butt" type="Sprite2D" parent="CharacterBody2D2/Node2D"]
+texture = ExtResource("3_qrknv")
+
+[node name="Thorax" type="Sprite2D" parent="CharacterBody2D2/Node2D"]
+texture = ExtResource("4_nosfs")
+
+[node name="Head" type="Sprite2D" parent="CharacterBody2D2/Node2D"]
+texture = ExtResource("5_0pxd4")
+
+[node name="Legs 3" type="Sprite2D" parent="CharacterBody2D2/Node2D"]
+texture = ExtResource("6_fgeto")
+
+[node name="Legs 2" type="Sprite2D" parent="CharacterBody2D2/Node2D"]
+texture = ExtResource("7_rat0l")
+
+[node name="Legs 1" type="Sprite2D" parent="CharacterBody2D2/Node2D"]
+texture = ExtResource("8_n0gmw")
+
+[node name="Bottom Wing" type="Sprite2D" parent="CharacterBody2D2/Node2D"]
+position = Vector2(90.9091, -118.182)
+texture = ExtResource("9_vjd4n")
+centered = false
+offset = Vector2(-341.05, -133.415)
+
+[node name="Top Wing" type="Sprite2D" parent="CharacterBody2D2/Node2D"]
+position = Vector2(95.4545, -127.273)
+texture = ExtResource("10_8wggg")
+centered = false
+offset = Vector2(-346.965, -127.05)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D2/Node2D"]
+libraries = {
+&"": SubResource("AnimationLibrary_0pxd4")
+}
+autoplay = "default"
+
+[node name="Area2D" type="Area2D" parent="CharacterBody2D2"]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D2/Area2D"]
+shape = SubResource("RectangleShape2D_4wvjm")
+debug_color = Color(3.51354e-06, 0.634899, 0.423628, 0.42)
+
+[node name="Avoidance" type="Area2D" parent="CharacterBody2D2"]
+collision_layer = 8
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D2/Avoidance"]
+shape = SubResource("CircleShape2D_vr6ll")
+debug_color = Color(0.847283, 0.376075, 0, 0.42)
+
+[node name="Hurtbox" type="Area2D" parent="CharacterBody2D2"]
+collision_layer = 16
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D2/Hurtbox"]
+position = Vector2(32, -19)
+rotation = 0.23911
+shape = SubResource("CapsuleShape2D_nosfs")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D2/Hurtbox"]
+position = Vector2(13, -23)
+rotation = -1.67552
+shape = SubResource("CapsuleShape2D_0pxd4")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="CharacterBody2D2/Hurtbox"]
+position = Vector2(-16, -1)
+rotation = -2.3527
+shape = SubResource("CapsuleShape2D_fgeto")
+
+[connection signal="animation_finished" from="CharacterBody2D2/AnimatedSprite2D" to="CharacterBody2D2" method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="body_entered" from="CharacterBody2D2/Area2D" to="CharacterBody2D2" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="CharacterBody2D2/Avoidance" to="CharacterBody2D2" method="_on_avoidance_body_entered"]
+[connection signal="body_exited" from="CharacterBody2D2/Avoidance" to="CharacterBody2D2" method="_on_avoidance_body_exited"]
+[connection signal="area_entered" from="CharacterBody2D2/Hurtbox" to="CharacterBody2D2" method="_on_hurtbox_area_entered"]
