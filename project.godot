@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Fog of War Game"
-run/main_scene="uid://cegxk7y5b0lgo"
+run/main_scene="uid://dsrfj4bg0r3do"
 config/features=PackedStringArray("4.4", "Forward Plus")
 boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/image="uid://d2tbskyqwhs6r"
@@ -27,6 +27,7 @@ GlobalManager="*res://Scripts/GlobalManager.gd"
 window/size/viewport_width=1080
 window/size/viewport_height=1080
 window/size/resizable=false
+window/stretch/mode="viewport"
 
 [file_customization]
 
@@ -91,3 +92,5 @@ common/physics_ticks_per_second=144
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

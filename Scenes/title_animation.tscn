@@ -973,6 +973,7 @@ animations = [{
 }]
 
 [node name="TitleAnimation" type="Node2D" node_paths=PackedStringArray("title_animation")]
+top_level = true
 script = ExtResource("1_38tp1")
 title_animation = NodePath("AnimatedSprite2D")
 
@@ -986,7 +987,6 @@ frame = 239
 frame_progress = 1.0
 
 [node name="PC Frame" type="Node2D" parent="."]
-visible = false
 position = Vector2(-145, 349)
 
 [node name="Sprite2D" type="Sprite2D" parent="PC Frame"]

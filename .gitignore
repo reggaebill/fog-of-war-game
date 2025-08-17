@@ -1,3 +1,24 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+Scenes/right_gun_2.gd
+Scenes/player.tscn
+Scenes/player.gd
+Scenes/main.tscn
+Scenes/main.gd
+Scenes/enemies.gd
+Assets/Test/AdobeStock_1423700874.png.import
+Assets/Test/AdobeStock_1423700874.png
+Scenes/right_gun_2.gd
+Scenes/player.tscn
+Scenes/player.gd
+Scenes/main.tscn
+Scenes/main.gd
+Scenes/enemies.gd
+Scenes/right_gun_2.gd
+Scenes/player.tscn
+Scenes/player.gd
+Scenes/main.tscn
+Scenes/main.gd
+Scenes/enemies.gd
+*.gd

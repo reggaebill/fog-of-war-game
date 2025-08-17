@@ -1,15 +1,16 @@
 extends CanvasLayer
+@export var animation: AnimationPlayer
 # @onready var optionsMenu = preload("res://options_menu.tscn")
 func _ready():
-	$AnimationPlayer.play("RESET")
+	animation.play("RESET")
 
 func resume():
 	get_tree().paused = false
-	$AnimationPlayer.play_backwards("blur")
+	animation.play("resume")
 
 func pause():
 	get_tree().paused = true
-	$AnimationPlayer.play("blur")
+	animation.play("pause")
 
 func testEsc():
 	if Input.is_action_just_pressed("esc") and !get_tree().paused:
@@ -17,28 +18,23 @@ func testEsc():
 	elif Input.is_action_just_pressed("esc") and get_tree().paused:
 		resume()
 
-func _process(delta):
+func _process(_delta):
 	testEsc()
-
-
-#func _on_options_pressed():
-	#resume()
-	#get_tree().change_scene_to_file("res://options_menu.tscn")
-
-
-# func _on_resume_button_pressed() -> void:
-# 	resume()
-
 
 # func _on_restart_button_pressed() -> void:
 # 	resume()
 # 	get_tree().reload_current_scene()
 
 
-func _on_main_menu_button_pressed() -> void:
+
+func _on_quit_pressed() -> void:
+	get_tree().quit()
+
+
+func _on_menu_button_pressed() -> void:
 	resume()
 	SceneTransition.change_scene("res://Scenes/title_screen.tscn")
 
 
-func _on_quit_button_pressed() -> void:
-	get_tree().quit()
+func _on_resume_button_pressed() -> void:
+	pass # Replace with function body.

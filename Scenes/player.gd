@@ -1,12 +1,14 @@
 class_name Player
 extends CharacterBody2D
 
+@export var sprite : AnimatedSprite2D
+@export var animations: AnimationPlayer
 @export var player = self
 @onready var line: Line2D = $Line2D
 @onready var rigidbody: RigidBody2D = $Node2D/OrbRigid
 @onready var staticbody: StaticBody2D = $Node2D/Gun/StaticBody2D
 
-
+var health = 50.0
 var original_scale_x := 1.0
 const SPEED = 300.0
 const ACCEL = 2000.0
@@ -70,3 +72,16 @@ func _flip_sprite() -> void:
 
 
 
+
+
+func _on_area_2d_area_entered(area:Area2D) -> void:
+	if health > 10:
+		health -= 10
+		animations.play("hurt")
+	if health <= 10:
+		# Handle player death
+		velocity = Vector2.ZERO
+		sprite.play("death")
+		await sprite.animation_finished
+		queue_free()
+		SceneTransition.game_over()  # Assuming you have a SceneTransitions script to handle game over

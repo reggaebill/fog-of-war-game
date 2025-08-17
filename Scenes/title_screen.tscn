@@ -1,14 +1,18 @@
-[gd_scene load_steps=8 format=3 uid="uid://dsrfj4bg0r3do"]
+[gd_scene load_steps=12 format=3 uid="uid://dsrfj4bg0r3do"]
 
 [ext_resource type="Script" uid="uid://bdvsqaq8depfa" path="res://Scenes/title_screen.gd" id="1_4gxqj"]
 [ext_resource type="Texture2D" uid="uid://2irlceq6deyu" path="res://Assets/Test/dithered pc colored copy.png" id="1_p3fck"]
 [ext_resource type="Texture2D" uid="uid://ehyknjntkc8f" path="res://Assets/Test/dithered desk.png" id="2_4gxqj"]
 [ext_resource type="Texture2D" uid="uid://y1lbb3p82a2l" path="res://Assets/UI/flowey's revenge.png" id="2_6vd4x"]
 [ext_resource type="PackedScene" uid="uid://obxmlt70jfbb" path="res://Scenes/title_animation.tscn" id="2_twnyg"]
-[ext_resource type="Texture2D" uid="uid://dimonr3un4dae" path="res://Assets/UI/Buttons/start.png" id="3_n82rj"]
-[ext_resource type="Texture2D" uid="uid://bvokow3jl2a8r" path="res://Assets/UI/Buttons/quit bloom.png" id="4_0061g"]
+[ext_resource type="Texture2D" uid="uid://dq8swc65ectly" path="res://Assets/UI/Buttons/start title unhover.png" id="3_sqelc"]
+[ext_resource type="Texture2D" uid="uid://2ugalndhs4ag" path="res://Assets/UI/Buttons/start title copy.png" id="4_w5sh6"]
+[ext_resource type="Texture2D" uid="uid://uy80uhi5qxb1" path="res://Assets/UI/Buttons/quit title unhover 2.png" id="5_sqelc"]
+[ext_resource type="Texture2D" uid="uid://bicpku5vxjxh7" path="res://Assets/UI/Buttons/quit title.png" id="6_ycay6"]
+[ext_resource type="AudioStream" uid="uid://chxe5kj0by81m" path="res://Assets/UI/Buttons/button sounds 1.wav" id="10_bsy20"]
+[ext_resource type="AudioStream" uid="uid://dow5xtv7m52j7" path="res://Assets/UI/Buttons/button sounds 2.wav" id="11_07cxn"]
 
-[node name="Title Screen" type="Control"]
+[node name="Title Screen" type="Control" node_paths=PackedStringArray("hover_sound", "unhover_sound", "pc")]
 y_sort_enabled = true
 layout_mode = 3
 anchors_preset = 15
@@ -17,6 +21,9 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_4gxqj")
+hover_sound = NodePath("Hover")
+unhover_sound = NodePath("Unhover")
+pc = NodePath("PC Frame")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = -1
@@ -51,7 +58,8 @@ offset_right = 100.0
 offset_bottom = 6.0
 grow_horizontal = 2
 grow_vertical = 2
-texture_normal = ExtResource("3_n82rj")
+texture_normal = ExtResource("3_sqelc")
+texture_hover = ExtResource("4_w5sh6")
 
 [node name="QuitButton" type="TextureButton" parent="."]
 layout_mode = 1
@@ -60,13 +68,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -100.0
-offset_top = 10.5
-offset_right = 100.0
-offset_bottom = 69.5
+offset_left = -72.5
+offset_top = 30.0
+offset_right = 72.5
+offset_bottom = 103.0
 grow_horizontal = 2
 grow_vertical = 2
-texture_normal = ExtResource("4_0061g")
+texture_normal = ExtResource("5_sqelc")
+texture_hover = ExtResource("6_ycay6")
 
 [node name="TitleAnimation" parent="." instance=ExtResource("2_twnyg")]
 visible = false
@@ -84,5 +93,19 @@ texture = ExtResource("1_p3fck")
 position = Vector2(688, 197)
 texture = ExtResource("2_4gxqj")
 
+[node name="TitleAnimation2" parent="." instance=ExtResource("2_twnyg")]
+
+[node name="Hover" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_bsy20")
+
+[node name="Unhover" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_07cxn")
+
+[node name="TitleTrack" type="AudioStreamPlayer" parent="."]
+
+[connection signal="mouse_entered" from="StartButton" to="." method="_on_start_button_mouse_entered"]
+[connection signal="mouse_exited" from="StartButton" to="." method="_on_start_button_mouse_exited"]
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="mouse_entered" from="QuitButton" to="." method="_on_quit_button_mouse_entered"]
+[connection signal="mouse_exited" from="QuitButton" to="." method="_on_quit_button_mouse_exited"]
 [connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]

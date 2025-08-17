@@ -1,9 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://cegxk7y5b0lgo"]
+[gd_scene load_steps=16 format=3 uid="uid://cegxk7y5b0lgo"]
 
 [ext_resource type="PackedScene" uid="uid://dgqha8jkomcif" path="res://Scenes/level.tscn" id="1_6bp64"]
 [ext_resource type="PackedScene" uid="uid://dmbj0mm1gl5bw" path="res://Scenes/player.tscn" id="2_344ge"]
 [ext_resource type="Script" uid="uid://daglv00h0ykr5" path="res://Scenes/enemies.gd" id="4_fdnlq"]
+[ext_resource type="PackedScene" uid="uid://cw0rlhplgi0lm" path="res://Scenes/pause_menu_2.tscn" id="4_ynf5e"]
 [ext_resource type="Material" uid="uid://dc3jvbt4auwn2" path="res://Shaders/materials/blue_noise/simplified_blue_noise.tres" id="5_21xkr"]
+[ext_resource type="Script" uid="uid://bbm4ud3in1ya4" path="res://Scenes/rich_text_label.gd" id="5_hptm8"]
 [ext_resource type="Texture2D" uid="uid://0tjvdt5vonx" path="res://Assets/Test/Untitled-2.png" id="5_kry3j"]
 [ext_resource type="Texture2D" uid="uid://2irlceq6deyu" path="res://Assets/Test/dithered pc colored copy.png" id="8_d1ilt"]
 [ext_resource type="Texture2D" uid="uid://ehyknjntkc8f" path="res://Assets/Test/dithered desk.png" id="9_6iyac"]
@@ -11,6 +13,12 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6iyac"]
 size = Vector2(127, 1088.99)
+
+[sub_resource type="Curve2D" id="Curve2D_344ge"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -167, -151, 0, 0, 0, 0, 1228, -163, 0, 0, 0, 0, 1214, 1195, 0, 0, 0, 0, -179, 1201, 0, 0, 0, 0, -167, -151)
+}
+point_count = 5
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_344ge"]
 
@@ -20,9 +28,6 @@ size = Vector2(127, 1088.99)
 material = SubResource("ShaderMaterial_21xkr")
 
 [node name="Main" type="Node2D"]
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="Level" type="Node2D" parent="."]
 z_index = -1
@@ -56,14 +61,45 @@ position = Vector2(535, 551)
 
 [node name="Player" parent="Player" instance=ExtResource("2_344ge")]
 
-[node name="Enemies" type="Node2D" parent="." groups=["Enemies"]]
+[node name="Enemies" type="Node2D" parent="." node_paths=PackedStringArray("path") groups=["Enemies"]]
 position = Vector2(3, -5)
 script = ExtResource("4_fdnlq")
+path = NodePath("Path2D")
+
+[node name="Path2D" type="Path2D" parent="Enemies"]
+curve = SubResource("Curve2D_344ge")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+process_mode = 3
+layer = 6
+
+[node name="pause menu 2" parent="CanvasLayer" instance=ExtResource("4_ynf5e")]
+top_level = true
+z_index = 7
+custom_minimum_size = Vector2(1080, 1080)
+offset_left = -1.0
+offset_top = -5.0
+offset_right = -1.0
+offset_bottom = 5.0
+size_flags_horizontal = 6
+size_flags_vertical = 6
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 872.0
+offset_top = 23.0
+offset_right = 1052.0
+offset_bottom = 134.0
+theme_override_font_sizes/mono_font_size = 30
+theme_override_font_sizes/normal_font_size = 30
+horizontal_alignment = 2
+script = ExtResource("5_hptm8")
 
 [node name="Shader" type="Node2D" parent="."]
+top_level = true
 z_index = -1
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Shader"]
+layer = 100
 
 [node name="TextureRect" type="TextureRect" parent="Shader/CanvasLayer"]
 visible = false
@@ -75,12 +111,14 @@ offset_bottom = 1083.0
 texture = ExtResource("5_kry3j")
 
 [node name="TextureRect2" type="TextureRect" parent="Shader/CanvasLayer"]
-z_index = -1
+top_level = true
+z_index = 100
 material = ExtResource("12_6iyac")
 offset_left = -386.0
 offset_top = -4.0
 offset_right = 1534.0
 offset_bottom = 1083.0
+mouse_filter = 2
 texture = ExtResource("5_kry3j")
 
 [node name="PC Frame" type="Node2D" parent="."]
@@ -106,3 +144,7 @@ material = SubResource("ShaderMaterial_344ge")
 position = Vector2(-3, 1.00012)
 scale = Vector2(-1078.11, 1082.85)
 mesh = SubResource("QuadMesh_6bp64")
+
+[node name="MainBGTrack" type="AudioStreamPlayer" parent="."]
+
+[connection signal="child_exiting_tree" from="Enemies" to="RichTextLabel" method="_on_enemies_child_exiting_tree"]

@@ -102,4 +102,8 @@ func _on_hurtbox_area_entered(area: Area2D) -> void:
 
 
 func _on_animated_sprite_2d_animation_finished() -> void:
+	GlobalManager.enemy_hit.emit()
 	queue_free()
+
+func _on_node_2d_visibility_changed() -> void:
+	pass

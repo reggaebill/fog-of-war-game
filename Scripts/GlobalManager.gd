@@ -1,5 +1,7 @@
 extends Node
 
+var enemies_killed = 0
+signal enemy_hit
 # GlobalManager: Singleton for managing player and enemies
 @onready var player = get_tree().current_scene.get_node_or_null("Player")
 var enemies: Array = []
@@ -29,3 +31,7 @@ func unregister_enemy(e: Node) -> void:
 
 func get_enemies() -> Array:
 	return enemies
+
+func on_enemy_hit() -> void:  # Example hit count, can be modified as needed
+	emit_signal("enemy_hit")
+	enemies_killed += 1
