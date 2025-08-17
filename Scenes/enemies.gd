@@ -3,7 +3,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 @export var path: Path2D
-const WASP_SCENE =  preload("res://Scenes/Wasp.tscn")
+const WASP_SCENE =  preload("res://Scenes/wasp.tscn")
 const SPAWN_AREA = Vector2(1000, 1000)
 var spawn_interval = 3.0
 

@@ -12,6 +12,7 @@ func game_over() -> void:
 	animation.play("game over")
 	await animation.animation_finished
 	load_scene("res://Scenes/title_screen.tscn")
+	GlobalManager.enemies_killed = 0
 
 func enter_game() -> void:
 	animation.play("enter game")
