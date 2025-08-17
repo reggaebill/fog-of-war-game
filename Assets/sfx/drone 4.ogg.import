@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dhu5lq0elygwm"
+path="res://.godot/imported/drone 4.ogg-df94d291b9feb45b3091fc7a32f2c85a.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/sfx/drone 4.ogg"
+dest_files=["res://.godot/imported/drone 4.ogg-df94d291b9feb45b3091fc7a32f2c85a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

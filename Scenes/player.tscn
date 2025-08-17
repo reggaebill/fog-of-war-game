@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://dmbj0mm1gl5bw"]
+[gd_scene load_steps=38 format=3 uid="uid://dmbj0mm1gl5bw"]
 
 [ext_resource type="Script" uid="uid://bwrs52hk2y46y" path="res://Scenes/player.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://h5gu2gimld3t" path="res://Assets/Robot boom/Layer 2.png" id="2_igrcy"]
@@ -18,6 +18,8 @@
 [ext_resource type="Texture2D" uid="uid://y4juy72t2ivs" path="res://Assets/Bullets/Untitled_Artwork(1).png" id="16_qqcod"]
 [ext_resource type="Texture2D" uid="uid://btmgd0oikaph7" path="res://Assets/Bullets/orb.png" id="17_igrcy"]
 [ext_resource type="Script" uid="uid://vm5wd2imyhlx" path="res://Scenes/flail.gd" id="18_fs7ks"]
+[ext_resource type="AudioStream" uid="uid://dpa4d7ve7hprq" path="res://Assets/sfx/drone 5.ogg" id="19_l6n3p"]
+[ext_resource type="Script" uid="uid://b8qtv7w4q6jy0" path="res://Scenes/orb_drone.gd" id="20_olqyp"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_bi64h"]
 animations = [{
@@ -596,6 +598,16 @@ root_node = NodePath("../Init")
 libraries = {
 &"": SubResource("AnimationLibrary_igrcy")
 }
+
+[node name="orb drone" type="AudioStreamPlayer2D" parent="Node2D" node_paths=PackedStringArray("orb")]
+position = Vector2(7.62939e-05, 2.38419e-06)
+scale = Vector2(1, 1)
+stream = ExtResource("19_l6n3p")
+volume_db = -20.0
+autoplay = true
+parameters/looping = true
+script = ExtResource("20_olqyp")
+orb = NodePath("../OrbRigid")
 
 [node name="HealthComponent" type="Node2D" parent="."]
 
